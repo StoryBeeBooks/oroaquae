@@ -1,17 +1,27 @@
-// Footer Loader Script
+// Footer Loader Script - Dynamically insert footer HTML
 document.addEventListener('DOMContentLoaded', function() {
-    // Load footer from footer.html
-    fetch('footer.html')
-        .then(response => response.text())
-        .then(html => {
-            // Create a container for the footer if it doesn't exist
-            let footerContainer = document.getElementById('footer-container');
-            if (!footerContainer) {
-                footerContainer = document.createElement('div');
-                footerContainer.id = 'footer-container';
-                document.body.appendChild(footerContainer);
-            }
-            footerContainer.innerHTML = html;
-        })
-        .catch(error => console.error('Error loading footer:', error));
+    const footerHTML = `
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-copyright">ARTWORKS © THE ARTIST. COPYRIGHT © 2025 ORO & AQUAE</p>
+            
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="faq.html">FAQ</a>
+                <a href="cookie-policy.html">Cookie Policy</a>
+                <a href="terms-of-use.html">Terms of Use</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="web-accessibility.html">Accessibility</a>
+            </div>
+            
+            <p class="footer-contact"><a href="mailto:info@oroaquae.com">info@oroaquae.com</a></p>
+        </div>
+    </footer>
+    `;
+    
+    const footerContainer = document.getElementById('footer-container');
+    if (footerContainer) {
+        footerContainer.innerHTML = footerHTML;
+    }
 });
+
