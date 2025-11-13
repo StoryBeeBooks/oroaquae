@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="footer-links">
                 <a href="about.html">About</a>
                 <a href="faq.html">FAQ</a>
+                <a href="#" onclick="window.openNewsletterModal && window.openNewsletterModal(event)">Subscribe</a>
                 <a href="cookie-policy.html">Cookie Policy</a>
                 <a href="terms-of-use.html">Terms of Use</a>
                 <a href="privacy-policy.html">Privacy Policy</a>
