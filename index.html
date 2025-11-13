@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="js" lang="en" dir="ltr">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -7,128 +7,96 @@
     <title>Oro & Aquae | Contemporary Art Gallery</title>
     <meta name="description" content="Oro & Aquae is a contemporary art gallery showcasing exceptional artists and their works.">
     <link rel="stylesheet" href="css/styles.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body x-data="{ mobileMenu: false }" class="relative flex flex-col min-h-screen bg-white text-black antialiased">
-    
-    <!-- Skip to content link -->
-    <a href="#main" class="skip-link">Skip to content</a>
-
+<body>
     <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="hero-image-container" style="position:relative; width:100vw; height:100vh; overflow:hidden; margin:0; padding:0;">
-            <img src="Images/Hero1.jpg" alt="Oro & Aquae Hero" style="width:100vw; height:100vh; object-fit:cover; object-position:center; display:block; margin:0; padding:0;" />
-            <div style="position:absolute; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.18);"></div>
-            
-            <!-- Navigation Bar Embedded in Hero -->
-            <nav class="hero-navigation" style="position:absolute; top:0; left:0; width:100vw; display:flex; justify-content:space-between; align-items:center; padding:2.5rem 3.5rem; z-index:10; margin:0;">
-                <div style="font-family:'beausite-display',serif; font-size:1.35rem; font-weight:400; letter-spacing:0.18em; color:#fff; text-transform:uppercase; text-shadow:0 2px 16px rgba(0,0,0,0.25);">ORO & AQUAE</div>
-                <div style="display:flex; gap:2.5rem;">
-                    <a href="artists.html" style="font-family:'beausite-detail',sans-serif; font-size:1rem; font-weight:400; letter-spacing:0.08em; color:#fff; text-decoration:none; text-shadow:0 2px 16px rgba(0,0,0,0.25);">Artists</a>
-                </div>
-            </nav>
-            
-            <!-- Hero Content -->
-            <div style="position:absolute; left:0; top:0; width:100vw; height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center;">
-                <h1 style="font-family:'beausite-display',serif; font-size:4.5rem; font-weight:400; color:#fff; letter-spacing:0.04em; text-align:center; margin-bottom:0.2em; text-shadow:0 2px 24px rgba(0,0,0,0.55);">Oro & Aquae</h1>
-                <p style="font-family:'beausite-detail',sans-serif; font-size:2.2rem; font-style:italic; color:#fff; text-align:center; margin-bottom:0.7em; text-shadow:0 2px 24px rgba(0,0,0,0.45);">Contemporary Art Gallery</p>
-                <a href="artists.html" style="font-family:'beausite-text',sans-serif; font-size:1.15rem; color:#fff; text-align:center; margin-bottom:0.5em; text-shadow:0 2px 16px rgba(0,0,0,0.25); text-decoration:none;">Artists</a>
+    <section class="hero">
+        <div class="hero-image">
+            <img src="https://via.placeholder.com/1600x900?text=Oro+Aquae+Hero" alt="Hero">
+        </div>
+        <nav class="hero-nav">
+            <div class="nav-left">
+                <a href="#artists">Artists</a>
+                <a href="#exhibitions">Exhibitions</a>
+            </div>
+            <div class="nav-center">
+                ORO & AQUAE
+            </div>
+            <div class="nav-right">
+                <a href="#collect">Collect</a>
+                <a href="#bookshop">Bookshop</a>
+                <a href="#account">Account</a>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <h1>Oro & Aquae</h1>
+            <p class="hero-subtitle">Contemporary Art Gallery</p>
+            <p class="hero-location">Vancouver</p>
+            <a href="#" class="hero-cta">Find out more</a>
+        </div>
+    </section>
+
+    <!-- Exhibition Card Section -->
+    <section class="exhibition-feature">
+        <div class="exhibition-container">
+            <div class="exhibition-image">
+                <img src="https://via.placeholder.com/800x600?text=Sylvia+Snowden" alt="Exhibition">
+            </div>
+            <div class="exhibition-text">
+                <p class="exhibition-label">GALLERY EXHIBITION</p>
+                <h2>Sylvia Snowden</h2>
+                <p class="exhibition-title">On the Verge</p>
+                <p class="exhibition-dates">6 November – 19 December 2025</p>
+                <p class="exhibition-location">New York</p>
+                <p class="exhibition-description">Sylvia Snowden (b. 1942, North Carolina) lives and works in Washington, DC. Over a six-decade-long career, the artist has developed a psychologically charged painting practice that addresses subjects often overlooked by society while pursuing a broader ambition: to capture the essence of the human spirit.</p>
+                <a href="#" class="exhibition-link">Visit exhibition</a>
             </div>
         </div>
     </section>
 
-    <!-- Main Content -->
-    <main id="main">
-        <!-- Featured Exhibitions -->
-        <section class="exhibitions-section">
-            <div class="container">
-                <h2 class="section-title">Current Exhibitions</h2>
-                <div class="exhibitions-grid">
-                    <article class="exhibition-card">
-                        <div class="exhibition-image">
-                            <img src="Ting Ting Gao/tingtinggao2.jpg" alt="Exhibition">
-                        </div>
-                        <div class="exhibition-info">
-                            <h3>Ting Ting Gao</h3>
-                            <p class="exhibition-date">Current Exhibition</p>
-                            <a href="artist.html?id=ting-ting-gao" class="exhibition-link">View More</a>
-                        </div>
-                    </article>
-
-                    <article class="exhibition-card">
-                        <div class="exhibition-image">
-                            <img src="Ting Ting Gao/tingtinggao4.jpg" alt="Exhibition">
-                        </div>
-                        <div class="exhibition-info">
-                            <h3>New Acquisitions</h3>
-                            <p class="exhibition-date">Ongoing</p>
-                            <a href="artists.html" class="exhibition-link">Explore Artists</a>
-                        </div>
-                    </article>
-
-                    <article class="exhibition-card">
-                        <div class="exhibition-image">
-                            <img src="Ting Ting Gao/tingtinggao6.jpg" alt="Exhibition">
-                        </div>
-                        <div class="exhibition-info">
-                            <h3>Featured Works</h3>
-                            <p class="exhibition-date">2024</p>
-                            <a href="artists.html" class="exhibition-link">View Collection</a>
-                        </div>
-                    </article>
-                </div>
+    <!-- Thresholds Exhibition Section -->
+    <section class="thresholds-feature">
+        <div class="thresholds-container">
+            <div class="thresholds-text">
+                <p class="thresholds-label">GALLERY EXHIBITION</p>
+                <h2>Thresholds</h2>
+                <p class="thresholds-subtitle">Curated by<br><u>Galuh Sukardi</u></p>
+                <p class="thresholds-dates">31 October 2025 – 10 January 2026</p>
+                <p class="thresholds-location">Hong Kong</p>
+                <p class="thresholds-description">'Thresholds' brings together the work of nine artists who chart their individual spiritual, political, physical or mythological journeys of transformation. Forming a chorus of unique experiences, all of which are shaped by the crossing of a 'threshold', the works selected reflect an understanding of the coexistence of light and dark; a dynamic whereby opposite forces are not at odds but in balance.</p>
+                <a href="#" class="thresholds-link">Visit exhibition</a>
             </div>
-        </section>
-
-        <!-- Artists Preview -->
-        <section class="artists-preview-section">
-            <div class="container">
-                <h2 class="section-title">Our Artists</h2>
-                <div class="artists-preview-grid">
-                    <a href="artist.html?id=ting-ting-gao" class="artist-preview-card">
-                        <div class="artist-preview-image">
-                            <img src="Ting Ting Gao/tingtinggao3.jpg" alt="Ting Ting Gao">
-                        </div>
-                        <h3>Ting Ting Gao</h3>
-                    </a>
-                    <a href="artist.html?id=susan-g-scott" class="artist-preview-card">
-                        <div class="artist-preview-image">
-                            <div class="placeholder-image">Susan G. Scott</div>
-                        </div>
-                        <h3>Susan G. Scott</h3>
-                    </a>
-                    <a href="artist.html?id=shelley-adler" class="artist-preview-card">
-                        <div class="artist-preview-image">
-                            <div class="placeholder-image">Shelley Adler</div>
-                        </div>
-                        <h3>Shelley Adler</h3>
-                    </a>
-                    <a href="artist.html?id=andy-dixon" class="artist-preview-card">
-                        <div class="artist-preview-image">
-                            <div class="placeholder-image">Andy Dixon</div>
-                        </div>
-                        <h3>Andy Dixon</h3>
-                    </a>
-                </div>
-                <div class="view-all-artists">
-                    <a href="artists.html" class="btn-primary">View All Artists</a>
-                </div>
+            <div class="thresholds-image">
+                <img src="https://via.placeholder.com/800x600?text=Thresholds" alt="Thresholds">
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <div class="newsletter-text">
+                <p class="newsletter-label">NEWSLETTER</p>
+                <h2>Be the first to know about our events, exhibitions, artists and much more.</h2>
+                <a href="#" class="newsletter-cta">Subscribe</a>
+            </div>
+            <div class="newsletter-image">
+                <img src="https://via.placeholder.com/800x600?text=Gallery+Space" alt="Gallery Space">
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-content">
+    <footer class="footer">
+        <div class="footer-container">
             <div class="footer-column">
                 <h4>Links</h4>
                 <ul>
                     <li><a href="terms-of-use.html">Terms of Use</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
                     <li><a href="cookie-policy.html">Cookie Policy</a></li>
                 </ul>
             </div>
-
-            <!-- Contact -->
             <div class="footer-column">
                 <h4>Connect</h4>
                 <ul>
@@ -137,11 +105,9 @@
                 </ul>
             </div>
         </div>
-
         <div class="footer-bottom">
-            <p>&copy; 2024 Oro & Aquae. All rights reserved.</p>
+            <p>&copy; 2025 Oro & Aquae. All rights reserved.</p>
         </div>
     </footer>
-
 </body>
 </html>
