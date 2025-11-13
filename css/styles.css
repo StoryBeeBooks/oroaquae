@@ -71,7 +71,7 @@ a:hover {
 /* ========================================================================== */
 
 .main-nav {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -94,7 +94,7 @@ a:hover {
     font-size: 1rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: var(--color-white);
+    color: var(--color-black);
     text-decoration: none;
     transition: opacity 0.3s ease;
 }
