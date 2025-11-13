@@ -1269,13 +1269,42 @@ p {
 .related-artists-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: var(--spacing-md);
+    gap: 2rem;
     margin-top: var(--spacing-lg);
 }
 
 .related-artist-card {
     display: block;
     text-align: center;
+    text-decoration: none;
+    color: var(--color-black);
+    transition: opacity 0.3s ease;
+}
+
+.related-artist-card:hover {
+    opacity: 0.7;
+}
+
+.related-artist-image {
+    aspect-ratio: 3/4;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 0.75rem;
+    background-color: var(--color-grey-light);
+}
+
+.related-artist-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.related-artist-card h3 {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
 }
 
 .related-artist-card img,

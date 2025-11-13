@@ -97,20 +97,17 @@
                 </div>
             </section>
 
-            <!-- Related Artists Section -->
+            <!-- Other Artists Section -->
             <section class="related-artists-section">
                 <div class="container">
-                    <h2>Related Artists</h2>
+                    <h2>Other Artists</h2>
                     <div class="related-artists-grid">
-                        <template x-for="relatedArtist in relatedArtists" :key="relatedArtist.id">
-                            <a :href="'artist.html?id=' + relatedArtist.id" class="related-artist-card">
-                                <template x-if="relatedArtist.id === 'ting-ting-gao' && relatedArtist.artworks && relatedArtist.artworks.length > 0">
-                                    <img :src="relatedArtist.artworks[0].image" :alt="relatedArtist.name">
-                                </template>
-                                <template x-if="relatedArtist.id !== 'ting-ting-gao' || !relatedArtist.artworks || relatedArtist.artworks.length === 0">
-                                    <div class="placeholder-image" x-text="relatedArtist.name"></div>
-                                </template>
-                                <h3 x-text="relatedArtist.name"></h3>
+                        <template x-for="otherArtist in otherArtists" :key="otherArtist.id">
+                            <a :href="'artist.html?id=' + otherArtist.id" class="related-artist-card">
+                                <div class="related-artist-image">
+                                    <img :src="otherArtist.thumbnailImage" :alt="otherArtist.name">
+                                </div>
+                                <h3 x-text="otherArtist.name"></h3>
                             </a>
                         </template>
                     </div>
@@ -127,7 +124,7 @@
                 error: false,
                 artist: null,
                 allArtists: [],
-                relatedArtists: [],
+                otherArtists: [],
                 
                 async init() {
                     await this.loadArtist();
@@ -162,11 +159,12 @@
                         // Update page title
                         document.getElementById('page-title').textContent = `${this.artist.name} | Oro & Aquae`;
                         
-                        // Get related artists (random 3, excluding current)
-                        this.relatedArtists = this.allArtists
-                            .filter(a => a.id !== artistId)
+                        // Get other artists (random 5-6, excluding current)
+                        const otherArtistsList = this.allArtists.filter(a => a.id !== artistId);
+                        const randomCount = Math.floor(Math.random() * 2) + 5; // Random 5 or 6
+                        this.otherArtists = otherArtistsList
                             .sort(() => 0.5 - Math.random())
-                            .slice(0, 3);
+                            .slice(0, Math.min(randomCount, otherArtistsList.length));
                         
                         this.loading = false;
                     } catch (error) {
