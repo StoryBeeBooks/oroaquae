@@ -17,51 +17,6 @@
     <!-- Skip to content link -->
     <a href="#main" class="skip-link">Skip to content</a>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="header-container">
-            <div class="header-content">
-                <!-- Logo -->
-                <div class="logo">
-                    <a href="index.html">ORO & AQUAE</a>
-                </div>
-
-                <!-- Desktop Navigation -->
-                <nav class="desktop-nav">
-                    <a href="artists.html">Artists</a>
-                    <a href="#exhibitions">Exhibitions</a>
-                </nav>
-
-                <!-- Right side actions -->
-                <div class="header-actions">
-                    <button class="search-btn" aria-label="Search">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <circle cx="8" cy="8" r="6.5" stroke="currentColor"/>
-                            <line x1="12.5" y1="12.5" x2="18" y2="18" stroke="currentColor"/>
-                        </svg>
-                    </button>
-                    <button @click="mobileMenu = !mobileMenu" class="mobile-menu-btn" aria-label="Menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div x-show="mobileMenu" 
-             x-transition
-             class="mobile-menu"
-             @click.away="mobileMenu = false">
-            <nav class="mobile-nav">
-                <a href="artists.html" @click="mobileMenu = false">Artists</a>
-                <a href="#exhibitions" @click="mobileMenu = false">Exhibitions</a>
-                <a href="contact.html" @click="mobileMenu = false">Contact</a>
-            </nav>
-        </div>
-    </header>
-
     <!-- Main Content -->
     <main id="main">
         <!-- Loading State -->

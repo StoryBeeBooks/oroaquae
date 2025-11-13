@@ -11,34 +11,10 @@
 </head>
 <body x-data="faqPage()" class="relative flex flex-col min-h-screen bg-white text-black antialiased">
     
+    <!-- Navigation Container (loaded dynamically) -->
+    <div id="nav-container"></div>
+    
     <a href="#main" class="skip-link">Skip to content</a>
-
-    <header class="header">
-        <div class="header-container">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="index.html">ORO & AQUAE</a>
-                </div>
-                <nav class="desktop-nav">
-                    <a href="artists.html">Artists</a>
-                    <a href="#exhibitions">Exhibitions</a>
-                </nav>
-                <div class="header-actions">
-                    <button class="search-btn" aria-label="Search">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <circle cx="8" cy="8" r="6.5" stroke="currentColor"/>
-                            <line x1="12.5" y1="12.5" x2="18" y2="18" stroke="currentColor"/>
-                        </svg>
-                    </button>
-                    <button @click="mobileMenu = !mobileMenu" class="mobile-menu-btn" aria-label="Menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </header>
 
     <main id="main">
         <section class="page-content">
