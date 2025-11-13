@@ -991,48 +991,69 @@ p {
 
 /* Artists Search */
 .artists-search-section {
-    padding: var(--spacing-lg) 0;
-    background-color: var(--color-grey);
+    padding: 3rem 0;
+    background-color: var(--color-grey-light);
+    border-bottom: 1px solid var(--color-grey-dark);
 }
 
 .search-container {
-    max-width: 600px;
+    max-width: 400px;
     margin: 0 auto;
+    position: relative;
 }
 
 .search-input {
     width: 100%;
-    padding: var(--spacing-sm) var(--spacing-md);
-    border: 1px solid var(--color-grey-dark);
-    font-size: 1rem;
-    font-family: inherit;
+    padding: 0.75rem 2.5rem 0.75rem 1rem;
+    border: none;
+    border-bottom: 1px solid var(--color-grey-dark);
+    background: transparent;
+    font-size: 0.95rem;
+    font-family: var(--font-detail);
+    letter-spacing: 0.02em;
+    transition: border-color 0.3s ease;
+}
+
+.search-input::placeholder {
+    color: var(--color-grey-medium);
+    font-style: italic;
 }
 
 .search-input:focus {
-    outline: 2px solid var(--color-black);
-    outline-offset: 2px;
+    outline: none;
+    border-bottom-color: var(--color-black);
 }
 
 /* Artists Grid */
 .artists-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: var(--spacing-lg);
+    gap: 3rem 2rem;
 }
 
 .artist-card {
     display: block;
-    transition: var(--transition-base);
+    text-decoration: none;
+    color: var(--color-black);
+    transition: opacity 0.3s ease;
 }
 
 .artist-card:hover {
-    transform: translateY(-4px);
+    opacity: 0.7;
+}
+
+.artist-card-name {
+    font-family: var(--font-detail);
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    margin-bottom: 1rem;
+    color: var(--color-black);
 }
 
 .artist-card-image {
     aspect-ratio: 3/4;
     overflow: hidden;
-    margin-bottom: var(--spacing-sm);
     background-color: var(--color-grey);
 }
 
@@ -1040,6 +1061,7 @@ p {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .artist-card-info h3 {
