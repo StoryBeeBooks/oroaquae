@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html class="js" lang="en" dir="ltr">
-    <!-- Alpine.js logic is defined once at the bottom of the file -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Artists | Oro & Aquae</title>
+    <meta name="description" content="Discover the exceptional artists represented by Oro & Aquae Gallery.">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body x-data="artistsPage()" class="relative flex flex-col min-h-screen bg-white text-black antialiased">
+    
+    <!-- Navigation Container (loaded dynamically) -->
+    <div id="nav-container"></div>
+    
+    <!-- Skip to content link -->
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <!-- Main Content -->
+    <main id="main">
         <!-- Page Header -->
         <section class="page-header">
             <div class="container">
@@ -8,23 +26,45 @@
             </div>
         </section>
 
-        <!-- Artists Search -->
-        <section class="artists-search-section">
+        <!-- Search Toggle Button -->
+        <section class="search-toggle-section">
+            <div class="container">
+                <button @click="showSearch = !showSearch" class="search-toggle-btn">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M11.5 11.5L15 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <span>Search Artist</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Artists Search (Hidden by default) -->
+        <section class="artists-search-section" x-show="showSearch" x-transition>
             <div class="container">
                 <div class="search-container">
                     <input type="text" 
                            x-model="searchQuery" 
                            @input="filterArtists()"
                            placeholder="Search artists..."
-                           class="search-input">
+                           class="search-input"
+                           x-ref="searchInput">
                 </div>
             </div>
         </section>
 
-        <!-- Artists Grid -->
+        <!-- Artists Display -->
         <section class="artists-grid-section">
             <div class="container">
-                <div class="artists-grid">
+                <!-- Alphabetical Name List (shown when not searching) -->
+                <div x-show="!showSearch || searchQuery === ''" class="artists-name-list">
+                    <template x-for="artist in sortedArtists" :key="artist.id">
+                        <a :href="'artist.html?id=' + artist.id" class="artist-name-link" x-text="artist.name"></a>
+                    </template>
+                </div>
+
+                <!-- Image Grid (shown when searching) -->
+                <div x-show="showSearch && searchQuery !== ''" class="artists-grid">
                     <template x-for="artist in filteredArtists" :key="artist.id">
                         <a :href="'artist.html?id=' + artist.id" class="artist-card">
                             <h3 class="artist-card-name" x-text="artist.name"></h3>
@@ -36,7 +76,7 @@
                 </div>
 
                 <!-- No results message -->
-                <div x-show="filteredArtists.length === 0" class="no-results">
+                <div x-show="showSearch && searchQuery !== '' && filteredArtists.length === 0" class="no-results">
                     <p>No artists found matching your search.</p>
                 </div>
             </div>
@@ -47,12 +87,29 @@
         function artistsPage() {
             return {
                 mobileMenu: false,
+                showSearch: false,
                 searchQuery: '',
                 artists: [],
                 filteredArtists: [],
                 
+                get sortedArtists() {
+                    return [...this.artists].sort((a, b) => 
+                        a.name.localeCompare(b.name)
+                    );
+                },
+                
                 async init() {
                     await this.loadArtists();
+                    this.$watch('showSearch', (value) => {
+                        if (value) {
+                            this.$nextTick(() => {
+                                this.$refs.searchInput?.focus();
+                            });
+                        } else {
+                            this.searchQuery = '';
+                            this.filteredArtists = this.artists;
+                        }
+                    });
                 },
                 
                 async loadArtists() {
@@ -81,53 +138,9 @@
     </script>
 
     <!-- Footer Container (loaded dynamically) -->
-    <div id="nav-container"></div>
-    <section class="artists-header-section">
-        <div class="artists-header-container">
-            <span class="search-toggle" @click="showSearch = true">
-                <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="9" cy="9" r="7" stroke="#222" stroke-width="2"/>
-                    <line x1="15.5" y1="15.5" x2="12.5" y2="12.5" stroke="#222" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-                <span class="search-toggle-text">Search Artist</span>
-            </span>
-        </div>
-    </section>
-
-    <!-- Alphabetical artist name list -->
-    <section class="artists-list-section" x-show="!showSearch">
-        <div class="artists-list-container">
-            <div class="artists-list-grid">
-                <template x-for="column in artistColumns" :key="column[0]">
-                    <div class="artists-list-column">
-                        <template x-for="artist in column" :key="artist.id">
-                            <a :href="'artist.html?id=' + artist.id" class="artists-list-name" x-text="artist.name"></a>
-                        </template>
-                    </div>
-                </template>
-            </div>
-        </div>
-    </section>
-
-    <!-- Search bar and grid -->
-    <section class="artists-search-section" x-show="showSearch">
-        <div class="search-container">
-            <input class="search-input" x-model="searchQuery" @input="filterArtists()" placeholder="Type Artist name">
-        </div>
-        <div class="artists-grid-section">
-            <div class="container">
-                <div class="artists-grid">
-                    <template x-for="artist in filteredArtists" :key="artist.id">
-                        <a :href="'artist.html?id=' + artist.id" class="artist-card">
-                            <h3 class="artist-card-name" x-text="artist.name"></h3>
-                            <div class="artist-card-image">
-                                <img :src="artist.thumbnailImage" :alt="artist.name">
-                            </div>
-                        </a>
-                    </template>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <div id="footer-container"></div>
+    
+    <script src="js/nav-loader.js"></script>
+    <script src="js/footer-loader.js"></script>
+</body>
+</html>
