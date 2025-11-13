@@ -190,15 +190,15 @@ a:hover {
 }
 
 /* ========================================================================== */
-/* EXHIBITION FEATURE SECTION */
+/* ARTIST FEATURE SECTION */
 /* ========================================================================== */
 
-.exhibition-feature {
+.artist-feature {
     padding: 5rem 0;
     background: var(--color-white);
 }
 
-.exhibition-container {
+.artist-feature-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
@@ -208,17 +208,17 @@ a:hover {
     padding: 0 3.5rem;
 }
 
-.exhibition-image img {
+.artist-feature-image img {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-.exhibition-text {
+.artist-feature-text {
     padding: 2rem 0;
 }
 
-.exhibition-label {
+.artist-feature-label {
     font-family: var(--font-detail);
     font-size: 0.85rem;
     letter-spacing: 0.15em;
@@ -227,7 +227,7 @@ a:hover {
     margin-bottom: 1rem;
 }
 
-.exhibition-text h2 {
+.artist-feature-text h2 {
     font-family: var(--font-display);
     font-size: 3rem;
     font-weight: 400;
@@ -236,7 +236,7 @@ a:hover {
     color: var(--color-black);
 }
 
-.exhibition-title {
+.artist-feature-title {
     font-family: var(--font-detail);
     font-size: 1.5rem;
     font-style: italic;
@@ -245,7 +245,7 @@ a:hover {
     color: var(--color-black);
 }
 
-.exhibition-dates {
+.artist-feature-dates {
     font-family: var(--font-detail);
     font-size: 0.95rem;
     letter-spacing: 0.05em;
@@ -253,7 +253,7 @@ a:hover {
     color: var(--color-black);
 }
 
-.exhibition-location {
+.artist-feature-location {
     font-family: var(--font-detail);
     font-size: 0.95rem;
     letter-spacing: 0.05em;
@@ -261,7 +261,7 @@ a:hover {
     color: var(--color-black);
 }
 
-.exhibition-description {
+.artist-feature-description {
     font-family: var(--font-primary);
     font-size: 1rem;
     line-height: 1.7;
@@ -269,7 +269,7 @@ a:hover {
     color: var(--color-black);
 }
 
-.exhibition-link {
+.artist-feature-link {
     display: inline-flex;
     align-items: center;
     font-family: var(--font-detail);
@@ -281,25 +281,25 @@ a:hover {
     transition: all 0.3s ease;
 }
 
-.exhibition-link::after {
+.artist-feature-link::after {
     content: ' →';
     margin-left: 0.5rem;
 }
 
-.exhibition-link:hover {
+.artist-feature-link:hover {
     padding-left: 0.3rem;
 }
 
 /* ========================================================================== */
-/* THRESHOLDS FEATURE SECTION */
+/* ARTIST FEATURE ALT SECTION (Alternate Layout) */
 /* ========================================================================== */
 
-.thresholds-feature {
+.artist-feature-alt {
     padding: 5rem 0;
     background: var(--color-white);
 }
 
-.thresholds-container {
+.artist-feature-alt-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
@@ -309,22 +309,22 @@ a:hover {
     padding: 0 3.5rem;
 }
 
-.thresholds-image {
+.artist-feature-alt-image {
     order: 2;
 }
 
-.thresholds-image img {
+.artist-feature-alt-image img {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-.thresholds-text {
+.artist-feature-alt-text {
     order: 1;
     padding: 2rem 0;
 }
 
-.thresholds-label {
+.artist-feature-alt-label {
     font-family: var(--font-detail);
     font-size: 0.85rem;
     letter-spacing: 0.15em;
@@ -333,7 +333,7 @@ a:hover {
     margin-bottom: 1rem;
 }
 
-.thresholds-text h2 {
+.artist-feature-alt-text h2 {
     font-family: var(--font-display);
     font-size: 3rem;
     font-weight: 400;
@@ -342,7 +342,16 @@ a:hover {
     color: var(--color-black);
 }
 
-.thresholds-subtitle {
+.artist-feature-alt-title {
+    font-family: var(--font-detail);
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: var(--color-black);
+}
+
+.artist-feature-alt-subtitle {
     font-family: var(--font-detail);
     font-size: 1rem;
     line-height: 1.6;
@@ -350,12 +359,12 @@ a:hover {
     color: var(--color-black);
 }
 
-.thresholds-subtitle u {
+.artist-feature-alt-subtitle u {
     text-decoration: underline;
     font-weight: 600;
 }
 
-.thresholds-dates {
+.artist-feature-alt-dates {
     font-family: var(--font-detail);
     font-size: 0.95rem;
     letter-spacing: 0.05em;
@@ -363,7 +372,7 @@ a:hover {
     color: var(--color-black);
 }
 
-.thresholds-location {
+.artist-feature-alt-location {
     font-family: var(--font-detail);
     font-size: 0.95rem;
     letter-spacing: 0.05em;
@@ -371,7 +380,7 @@ a:hover {
     color: var(--color-black);
 }
 
-.thresholds-description {
+.artist-feature-alt-description {
     font-family: var(--font-primary);
     font-size: 1rem;
     line-height: 1.7;
@@ -379,7 +388,7 @@ a:hover {
     color: var(--color-black);
 }
 
-.thresholds-link {
+.artist-feature-alt-link {
     display: inline-flex;
     align-items: center;
     font-family: var(--font-detail);
@@ -391,12 +400,12 @@ a:hover {
     transition: all 0.3s ease;
 }
 
-.thresholds-link::after {
+.artist-feature-alt-link::after {
     content: ' →';
     margin-left: 0.5rem;
 }
 
-.thresholds-link:hover {
+.artist-feature-alt-link:hover {
     padding-left: 0.3rem;
 }
 
