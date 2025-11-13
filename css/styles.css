@@ -46,6 +46,8 @@ html {
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+    /* Prevent horizontal scroll on mobile */
+    overflow-x: hidden;
 }
 
 body {
@@ -60,6 +62,9 @@ body {
     letter-spacing: 0.01em;
     margin: 0;
     padding: 0;
+    /* Prevent horizontal scroll on mobile */
+    overflow-x: hidden;
+    width: 100%;
 }
 
 img {
@@ -76,6 +81,20 @@ a {
 
 a:hover {
     opacity: 0.7;
+}
+
+/* Mobile Touch Optimization */
+@media (hover: none) and (pointer: coarse) {
+    /* Touch device optimizations */
+    a, button, input[type="submit"], .btn-primary {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    /* Prevent double-tap zoom on buttons */
+    button, .btn-primary {
+        touch-action: manipulation;
+    }
 }
 
 /* ========================================================================== */
@@ -124,6 +143,7 @@ a:hover {
     position: relative;
     width: 100%;
     height: 100vh;
+    min-height: 500px; /* Ensure minimum height on mobile */
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -1471,6 +1491,37 @@ p {
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+    
+    .artist-feature-container,
+    .artist-feature-alt-container {
+        padding: 0 2rem;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main-nav {
+        padding: 1rem 2rem;
+    }
+    
+    .artist-feature-container,
+    .artist-feature-alt-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .artist-feature-alt-image {
+        order: 1;
+    }
+    
+    .artist-feature-alt-text {
+        order: 2;
+    }
+}
+
 @media (min-width: 768px) {
     .desktop-nav {
         display: flex;
@@ -1493,6 +1544,184 @@ p {
     }
 }
 
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .main-nav {
+        padding: 1rem;
+    }
+    
+    .nav-logo {
+        font-size: 0.75rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .artist-feature-text h2,
+    .artist-feature-alt-text h2 {
+        font-size: 2.5rem;
+    }
+    
+    .page-header {
+        padding: calc(60px + 2rem) 0 2rem 0;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .artists-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 2rem 1rem;
+    }
+    
+    .artists-name-list {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 0.75rem 1rem;
+    }
+    
+    .artworks-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .related-artists-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .footer-links {
+        gap: 1rem;
+    }
+    
+    .footer-links a {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 0.75rem;
+    }
+    
+    .main-nav {
+        padding: 0.75rem;
+    }
+    
+    .nav-logo {
+        font-size: 0.7rem;
+        letter-spacing: 0.15em;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.75rem;
+        padding: 0 1rem;
+    }
+    
+    .hero-artist-link {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .artist-feature,
+    .artist-feature-alt {
+        padding: 3rem 0;
+    }
+    
+    .artist-feature-container,
+    .artist-feature-alt-container {
+        padding: 0 1rem;
+    }
+    
+    .artist-feature-text h2,
+    .artist-feature-alt-text h2 {
+        font-size: 2rem;
+    }
+    
+    .page-header h1 {
+        font-size: 1.75rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+    }
+    
+    .search-toggle-btn {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .artists-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .artists-name-list {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .artist-name-link {
+        font-size: 0.95rem;
+        padding: 0.4rem 0;
+    }
+    
+    .artist-card-name {
+        font-size: 0.95rem;
+    }
+    
+    .related-artists-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .footer-container {
+        padding: 2rem 1rem;
+    }
+    
+    .footer-copyright {
+        font-size: 0.7rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .footer-links a {
+        font-size: 0.75rem;
+    }
+    
+    .footer-contact {
+        font-size: 0.8rem;
+    }
+    
+    .btn-primary {
+        font-size: 0.7rem;
+        padding: 0.75rem 1.5rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.95rem;
+    }
+    
+    .faq-question {
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
+}
+
 @media (min-width: 1024px) {
     .exhibitions-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -1500,6 +1729,10 @@ p {
     
     .hero-title {
         font-size: 5rem;
+    }
+    
+    .artworks-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 }
 
