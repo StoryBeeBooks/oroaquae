@@ -1,0 +1,103 @@
+{
+  "artists": [
+    {
+      "id": "ting-ting-gao",
+      "name": "Ting Ting Gao",
+      "birthYear": "1990",
+      "biography": "<p>Ting Ting Gao is a contemporary artist whose work explores the intersection of traditional Chinese aesthetics and modern urban experiences. Born in 1990, Gao's practice spans painting, mixed media, and installation art.</p><p>Her distinctive visual language combines delicate brushwork with bold compositional structures, creating works that bridge Eastern and Western artistic traditions. Through her art, Gao investigates themes of cultural identity, memory, and transformation in an increasingly globalized world.</p><p>Gao has exhibited internationally and her works are held in private collections across North America and Asia. She currently lives and works in Vancouver, Canada.</p>",
+      "artworks": [
+        {
+          "title": "Ethereal Landscape I",
+          "year": "2023",
+          "medium": "Mixed media on canvas",
+          "dimensions": "48 x 60 inches",
+          "image": "Ting Ting Gao/tingtinggao1.jpg"
+        },
+        {
+          "title": "Urban Dreams",
+          "year": "2023",
+          "medium": "Acrylic and ink on canvas",
+          "dimensions": "36 x 48 inches",
+          "image": "Ting Ting Gao/tingtinggao2.jpg"
+        },
+        {
+          "title": "Memory Fragments",
+          "year": "2024",
+          "medium": "Mixed media on paper",
+          "dimensions": "24 x 30 inches",
+          "image": "Ting Ting Gao/tingtinggao3.jpg"
+        },
+        {
+          "title": "Convergence",
+          "year": "2024",
+          "medium": "Oil and gold leaf on canvas",
+          "dimensions": "40 x 52 inches",
+          "image": "Ting Ting Gao/tingtinggao4.jpg"
+        },
+        {
+          "title": "Whispers of the Past",
+          "year": "2023",
+          "medium": "Watercolor and ink on silk",
+          "dimensions": "18 x 24 inches",
+          "image": "Ting Ting Gao/tingtinggao5.jpg"
+        },
+        {
+          "title": "Transcendence",
+          "year": "2024",
+          "medium": "Mixed media on canvas",
+          "dimensions": "60 x 72 inches",
+          "image": "Ting Ting Gao/tingtinggao6.jpg"
+        },
+        {
+          "title": "Reflection Series No. 3",
+          "year": "2024",
+          "medium": "Acrylic on linen",
+          "dimensions": "30 x 40 inches",
+          "image": "Ting Ting Gao/tingtinggao7.jpg"
+        }
+      ]
+    },
+    {
+      "id": "susan-g-scott",
+      "name": "Susan G. Scott",
+      "birthYear": "1965",
+      "biography": "<p>Susan G. Scott is a multidisciplinary artist whose practice encompasses sculpture, installation, and performance art. Born in 1965, Scott has spent over three decades developing a unique artistic voice that challenges conventional notions of space, materiality, and viewer engagement.</p><p>Her work is characterized by an exploration of organic forms and natural materials, often creating immersive environments that invite contemplation and sensory experience. Scott's sculptures balance delicacy and strength, ephemeral and permanent, creating dialogues between opposing forces.</p><p>Scott has received numerous awards and grants, and her work has been exhibited in major galleries and museums internationally. She is based in Toronto, Canada.</p>",
+      "artworks": []
+    },
+    {
+      "id": "shelley-adler",
+      "name": "Shelley Adler",
+      "birthYear": "1978",
+      "biography": "<p>Shelley Adler is a contemporary painter known for her vibrant, emotionally charged canvases that explore themes of identity, femininity, and psychological landscapes. Born in 1978, Adler's work has evolved from figurative expressionism to increasingly abstract compositions.</p><p>Her paintings are distinguished by bold color palettes and gestural mark-making, creating dynamic surfaces that pulse with energy. Adler's practice is deeply introspective, drawing from personal experience while addressing universal themes of human connection and isolation.</p><p>Adler holds an MFA from Emily Carr University and has exhibited extensively throughout Canada and the United States. She maintains her studio practice in Vancouver.</p>",
+      "artworks": []
+    },
+    {
+      "id": "christine-reimer",
+      "name": "Christine Reimer",
+      "birthYear": "1972",
+      "biography": "<p>Christine Reimer is a conceptual artist whose interdisciplinary practice investigates the relationship between language, image, and meaning. Born in 1972, Reimer works across photography, text-based art, installation, and video.</p><p>Her work often employs systems of classification and archival methods to examine how we construct narratives and preserve memory. Through meticulous research and careful formal considerations, Reimer creates works that are both intellectually rigorous and visually compelling.</p><p>Reimer has exhibited nationally and internationally, with works in numerous public and private collections. She is a Professor of Art at a leading Canadian university and maintains an active studio practice in Calgary.</p>",
+      "artworks": []
+    },
+    {
+      "id": "leonel-jules",
+      "name": "Leonel Jules",
+      "birthYear": "1983",
+      "biography": "<p>Leonel Jules is a contemporary artist whose practice explores issues of diaspora, cultural hybridity, and postcolonial identity. Born in 1983 in Haiti, Jules immigrated to Canada as a young adult, and this experience of migration profoundly informs his artistic vision.</p><p>Working primarily in painting and collage, Jules creates layered compositions that incorporate imagery from Caribbean history, popular culture, and personal memory. His works are vibrant celebrations of Afro-Caribbean culture while also addressing complex questions of belonging and representation.</p><p>Jules has received critical acclaim for his exhibitions across North America and his work is included in several museum collections. He lives and works in Montreal.</p>",
+      "artworks": []
+    },
+    {
+      "id": "andy-dixon",
+      "name": "Andy Dixon",
+      "birthYear": "1979",
+      "biography": "<p>Andy Dixon is a painter and sculptor known for his darkly humorous take on consumer culture, celebrity, and the art world itself. Born in 1979, Dixon's practice is characterized by technical virtuosity combined with a punk sensibility and irreverent wit.</p><p>His paintings often reference art historical traditions while subverting them through contemporary subject matter and bold compositional choices. Dixon's work has been described as both a critique and celebration of contemporary visual culture, navigating the space between high and low art with confidence and humor.</p><p>Dixon has exhibited internationally and his works are held in collections worldwide. He is based in Vancouver, where he maintains an active studio practice.</p>",
+      "artworks": []
+    },
+    {
+      "id": "ben-walmsley",
+      "name": "Ben Walmsley",
+      "birthYear": "1988",
+      "biography": "<p>Ben Walmsley is an emerging artist whose practice centers on landscape painting and environmental awareness. Born in 1988, Walmsley brings a contemporary perspective to the Canadian landscape tradition, addressing themes of climate change and human impact on natural environments.</p><p>His paintings are notable for their atmospheric quality and subtle color harmonies, evoking both the beauty and fragility of wilderness spaces. Walmsley's work invites viewers to consider their relationship with nature and the urgent need for environmental stewardship.</p><p>Walmsley has rapidly gained recognition in the Canadian art scene and has participated in numerous group and solo exhibitions. He works from his studio in British Columbia, drawing inspiration from the surrounding forests and coastlines.</p>",
+      "artworks": []
+    }
+  ]
+}

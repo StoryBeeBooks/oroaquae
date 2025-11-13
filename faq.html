@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html class="js" lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Frequently Asked Questions | Oro & Aquae</title>
+    <meta name="description" content="Frequently Asked Questions about Oro & Aquae Gallery.">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body x-data="faqPage()" class="relative flex flex-col min-h-screen bg-white text-black antialiased">
+    
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">ORO & AQUAE</a>
+                </div>
+                <nav class="desktop-nav">
+                    <a href="artists.html">Artists</a>
+                    <a href="#exhibitions">Exhibitions</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="search-btn" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="8" cy="8" r="6.5" stroke="currentColor"/>
+                            <line x1="12.5" y1="12.5" x2="18" y2="18" stroke="currentColor"/>
+                        </svg>
+                    </button>
+                    <button @click="mobileMenu = !mobileMenu" class="mobile-menu-btn" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="page-content">
+            <div class="container content-narrow">
+                <h1>Frequently Asked Questions</h1>
+                
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button @click="toggleFaq(1)" class="faq-question">
+                            <span>What are your gallery hours?</span>
+                            <span class="faq-icon" :class="{ 'active': openFaq === 1 }">+</span>
+                        </button>
+                        <div x-show="openFaq === 1" x-transition class="faq-answer">
+                            <p>Our gallery is open:<br>
+                            Tuesday - Saturday: 10:00 AM - 6:00 PM<br>
+                            Sunday: 12:00 PM - 5:00 PM<br>
+                            Monday: Closed<br><br>
+                            Please note that hours may vary during holidays and special events.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button @click="toggleFaq(2)" class="faq-question">
+                            <span>Is admission to the gallery free?</span>
+                            <span class="faq-icon" :class="{ 'active': openFaq === 2 }">+</span>
+                        </button>
+                        <div x-show="openFaq === 2" x-transition class="faq-answer">
+                            <p>Yes, admission to Oro & Aquae is free and open to the public. We welcome all visitors to explore our exhibitions.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button @click="toggleFaq(3)" class="faq-question">
+                            <span>How can I purchase artwork?</span>
+                            <span class="faq-icon" :class="{ 'active': openFaq === 3 }">+</span>
+                        </button>
+                        <div x-show="openFaq === 3" x-transition class="faq-answer">
+                            <p>If you're interested in purchasing artwork, please contact us at <a href="mailto:sales@oroaquae.com">sales@oroaquae.com</a> or call +1 (234) 567-890. Our art consultants will be happy to assist you with inquiries, pricing, and acquisition details.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button @click="toggleFaq(4)" class="faq-question">
+                            <span>Do you offer art advisory services?</span>
+                            <span class="faq-icon" :class="{ 'active': openFaq === 4 }">+</span>
+                        </button>
+                        <div x-show="openFaq === 4" x-transition class="faq-answer">
+                            <p>Yes, we provide personalized art advisory services for private collectors and corporate clients. Our experienced team can help you build and curate your art collection. Please contact us to schedule a consultation.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button @click="toggleFaq(5)" class="faq-question">
+                            <span>Can I schedule a private viewing?</span>
+                            <span class="faq-icon" :class="{ 'active': openFaq === 5 }">+</span>
+                        </button>
+                        <div x-show="openFaq === 5" x-transition class="faq-answer">
+                            <p>Absolutely! We're happy to arrange private viewings outside of regular gallery hours. Please contact us at least 48 hours in advance to schedule your appointment.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button @click="toggleFaq(6)" class="faq-question">
+                            <span>How do I submit my work for consideration?</span>
+                            <span class="faq-icon" :class="{ 'active': openFaq === 6 }">+</span>
+                        </button>
+                        <div x-show="openFaq === 6" x-transition class="faq-answer">
+                            <p>We welcome submissions from emerging and established artists. Please send your portfolio, artist statement, and CV to <a href="mailto:submissions@oroaquae.com">submissions@oroaquae.com</a>. Due to the volume of submissions, we may not be able to respond to all inquiries, but we review each submission carefully.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button @click="toggleFaq(7)" class="faq-question">
+                            <span>Is the gallery wheelchair accessible?</span>
+                            <span class="faq-icon" :class="{ 'active': openFaq === 7 }">+</span>
+                        </button>
+                        <div x-show="openFaq === 7" x-transition class="faq-answer">
+                            <p>Yes, our gallery is fully wheelchair accessible. We are committed to providing an inclusive experience for all visitors. If you have specific accessibility needs, please let us know in advance so we can accommodate you.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button @click="toggleFaq(8)" class="faq-question">
+                            <span>Do you offer guided tours?</span>
+                            <span class="faq-icon" :class="{ 'active': openFaq === 8 }">+</span>
+                        </button>
+                        <div x-show="openFaq === 8" x-transition class="faq-answer">
+                            <p>Yes, we offer guided tours for groups by appointment. Tours can be customized to focus on specific exhibitions or artists. Please contact us at least one week in advance to arrange a tour.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button @click="toggleFaq(9)" class="faq-question">
+                            <span>Can I take photographs in the gallery?</span>
+                            <span class="faq-icon" :class="{ 'active': openFaq === 9 }">+</span>
+                        </button>
+                        <div x-show="openFaq === 9" x-transition class="faq-answer">
+                            <p>Personal photography without flash is permitted in most areas of the gallery. However, some exhibitions may have restrictions due to copyright or conservation concerns. Please check with gallery staff or look for signage indicating photography policies.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button @click="toggleFaq(10)" class="faq-question">
+                            <span>How can I stay updated on new exhibitions and events?</span>
+                            <span class="faq-icon" :class="{ 'active': openFaq === 10 }">+</span>
+                        </button>
+                        <div x-show="openFaq === 10" x-transition class="faq-answer">
+                            <p>Subscribe to our newsletter to receive updates on upcoming exhibitions, artist talks, and special events. You can also follow us on social media for regular updates and behind-the-scenes content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-contact">
+                    <h2>Still Have Questions?</h2>
+                    <p>If you didn't find the answer you're looking for, please don't hesitate to <a href="contact.html">contact us</a>. We're here to help!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Oro & Aquae</h3>
+                    <p>Contemporary Art Gallery</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Gallery</h4>
+                    <ul>
+                        <li><a href="artists.html">Artists</a></li>
+                        <li><a href="#exhibitions">Exhibitions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="web-accessibility.html">Web Accessibility</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-use.html">Terms of Use</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="mailto:info@oroaquae.com">info@oroaquae.com</a></li>
+                        <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Oro & Aquae. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function faqPage() {
+            return {
+                mobileMenu: false,
+                openFaq: null,
+                
+                toggleFaq(id) {
+                    this.openFaq = this.openFaq === id ? null : id;
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

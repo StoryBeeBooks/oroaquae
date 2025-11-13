@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="js" lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Us | Oro & Aquae</title>
+    <meta name="description" content="Get in touch with Oro & Aquae Gallery.">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body x-data="{ mobileMenu: false }" class="relative flex flex-col min-h-screen bg-white text-black antialiased">
+    
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">ORO & AQUAE</a>
+                </div>
+                <nav class="desktop-nav">
+                    <a href="artists.html">Artists</a>
+                    <a href="#exhibitions">Exhibitions</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="search-btn" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="8" cy="8" r="6.5" stroke="currentColor"/>
+                            <line x1="12.5" y1="12.5" x2="18" y2="18" stroke="currentColor"/>
+                        </svg>
+                    </button>
+                    <button @click="mobileMenu = !mobileMenu" class="mobile-menu-btn" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="page-content">
+            <div class="container">
+                <h1>Contact Us</h1>
+                
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Get in Touch</h2>
+                        <p>We would love to hear from you. Whether you're interested in visiting the gallery, inquiring about an artwork, or have any questions, please don't hesitate to reach out.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <h3>Email</h3>
+                                <p><a href="mailto:info@oroaquae.com">info@oroaquae.com</a></p>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <h3>Phone</h3>
+                                <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <h3>Gallery Hours</h3>
+                                <p>Tuesday - Saturday: 10:00 AM - 6:00 PM<br>
+                                Sunday: 12:00 PM - 5:00 PM<br>
+                                Monday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <h2>Send us a Message</h2>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Oro & Aquae</h3>
+                    <p>Contemporary Art Gallery</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Gallery</h4>
+                    <ul>
+                        <li><a href="artists.html">Artists</a></li>
+                        <li><a href="#exhibitions">Exhibitions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="web-accessibility.html">Web Accessibility</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-use.html">Terms of Use</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="mailto:info@oroaquae.com">info@oroaquae.com</a></li>
+                        <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Oro & Aquae. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

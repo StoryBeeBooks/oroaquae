@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html class="js" lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Oro & Aquae | Contemporary Art Gallery</title>
+    <meta name="description" content="Oro & Aquae is a contemporary art gallery showcasing exceptional artists and their works.">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body x-data="{ mobileMenu: false }" class="relative flex flex-col min-h-screen bg-white text-black antialiased">
+    
+    <!-- Skip to content link -->
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">ORO & AQUAE</a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
+                    <a href="artists.html">Artists</a>
+                    <a href="#exhibitions">Exhibitions</a>
+                </nav>
+
+                <!-- Right side actions -->
+                <div class="header-actions">
+                    <button class="search-btn" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="8" cy="8" r="6.5" stroke="currentColor"/>
+                            <line x1="12.5" y1="12.5" x2="18" y2="18" stroke="currentColor"/>
+                        </svg>
+                    </button>
+                    <button @click="mobileMenu = !mobileMenu" class="mobile-menu-btn" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div x-show="mobileMenu" 
+             x-transition
+             class="mobile-menu"
+             @click.away="mobileMenu = false">
+            <nav class="mobile-nav">
+                <a href="artists.html" @click="mobileMenu = false">Artists</a>
+                <a href="#exhibitions" @click="mobileMenu = false">Exhibitions</a>
+                <a href="contact.html" @click="mobileMenu = false">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-image-container">
+                <img src="Ting Ting Gao/tingtinggao1.jpg" 
+                     alt="Featured artwork" 
+                     class="hero-image">
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">Oro & Aquae</h1>
+                <p class="hero-subtitle">Contemporary Art Gallery</p>
+            </div>
+        </section>
+
+        <!-- Featured Exhibitions -->
+        <section class="exhibitions-section">
+            <div class="container">
+                <h2 class="section-title">Current Exhibitions</h2>
+                <div class="exhibitions-grid">
+                    <article class="exhibition-card">
+                        <div class="exhibition-image">
+                            <img src="Ting Ting Gao/tingtinggao2.jpg" alt="Exhibition">
+                        </div>
+                        <div class="exhibition-info">
+                            <h3>Ting Ting Gao</h3>
+                            <p class="exhibition-date">Current Exhibition</p>
+                            <a href="artist.html?id=ting-ting-gao" class="exhibition-link">View More</a>
+                        </div>
+                    </article>
+
+                    <article class="exhibition-card">
+                        <div class="exhibition-image">
+                            <img src="Ting Ting Gao/tingtinggao4.jpg" alt="Exhibition">
+                        </div>
+                        <div class="exhibition-info">
+                            <h3>New Acquisitions</h3>
+                            <p class="exhibition-date">Ongoing</p>
+                            <a href="artists.html" class="exhibition-link">Explore Artists</a>
+                        </div>
+                    </article>
+
+                    <article class="exhibition-card">
+                        <div class="exhibition-image">
+                            <img src="Ting Ting Gao/tingtinggao6.jpg" alt="Exhibition">
+                        </div>
+                        <div class="exhibition-info">
+                            <h3>Featured Works</h3>
+                            <p class="exhibition-date">2024</p>
+                            <a href="artists.html" class="exhibition-link">View Collection</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artists Preview -->
+        <section class="artists-preview-section">
+            <div class="container">
+                <h2 class="section-title">Our Artists</h2>
+                <div class="artists-preview-grid">
+                    <a href="artist.html?id=ting-ting-gao" class="artist-preview-card">
+                        <div class="artist-preview-image">
+                            <img src="Ting Ting Gao/tingtinggao3.jpg" alt="Ting Ting Gao">
+                        </div>
+                        <h3>Ting Ting Gao</h3>
+                    </a>
+                    <a href="artist.html?id=susan-g-scott" class="artist-preview-card">
+                        <div class="artist-preview-image">
+                            <div class="placeholder-image">Susan G. Scott</div>
+                        </div>
+                        <h3>Susan G. Scott</h3>
+                    </a>
+                    <a href="artist.html?id=shelley-adler" class="artist-preview-card">
+                        <div class="artist-preview-image">
+                            <div class="placeholder-image">Shelley Adler</div>
+                        </div>
+                        <h3>Shelley Adler</h3>
+                    </a>
+                    <a href="artist.html?id=andy-dixon" class="artist-preview-card">
+                        <div class="artist-preview-image">
+                            <div class="placeholder-image">Andy Dixon</div>
+                        </div>
+                        <h3>Andy Dixon</h3>
+                    </a>
+                </div>
+                <div class="view-all-artists">
+                    <a href="artists.html" class="btn-primary">View All Artists</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Gallery Info -->
+                <div class="footer-column">
+                    <h3>Oro & Aquae</h3>
+                    <p>Contemporary Art Gallery</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h4>Gallery</h4>
+                    <ul>
+                        <li><a href="artists.html">Artists</a></li>
+                        <li><a href="#exhibitions">Exhibitions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="web-accessibility.html">Web Accessibility</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-use.html">Terms of Use</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="mailto:info@oroaquae.com">info@oroaquae.com</a></li>
+                        <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Oro & Aquae. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
