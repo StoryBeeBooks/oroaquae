@@ -1575,11 +1575,12 @@ p {
 
 .newsletter-modal-form label {
     font-family: var(--font-sans);
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     font-weight: 400;
     color: var(--color-grey-medium);
     margin-bottom: 0.5rem;
     display: block;
+    letter-spacing: 0.02em;
 }
 
 .newsletter-modal-form input[type=\"email\"],
@@ -1625,16 +1626,18 @@ p {
 
 .form-group-checkbox label {
     font-family: var(--font-sans);
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     line-height: 1.6;
+    letter-spacing: 0.01em;
     color: var(--color-grey-medium);
     cursor: pointer;
 }
 
 .form-disclaimer {
     font-family: var(--font-sans);
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     line-height: 1.6;
+    letter-spacing: 0.01em;
     color: var(--color-grey-medium);
     margin-bottom: 2rem;
 }
@@ -1652,7 +1655,9 @@ p {
 .newsletter-submit {
     width: 100%;
     padding: 1rem 2rem;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
 }
 
 .form-message {
@@ -1860,24 +1865,63 @@ p {
     /* Newsletter Modal - Tablet */
     .newsletter-modal-grid {
         grid-template-columns: 1fr;
+        min-height: auto;
     }
     
     .newsletter-modal-image {
-        min-height: 250px;
+        min-height: 200px;
+        max-height: 250px;
         order: 1;
     }
     
     .newsletter-modal-form {
-        padding: 2rem;
+        padding: 1.75rem;
         order: 2;
     }
     
+    .newsletter-modal-form .form-group {
+        margin-bottom: 1.25rem;
+    }
+    
+    .newsletter-modal-overlay-text {
+        padding: 1.5rem;
+    }
+    
     .newsletter-modal-overlay-text h2 {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        margin-bottom: 0.75rem;
     }
     
     .newsletter-modal-overlay-text p {
-        font-size: 1rem;
+        font-size: 0.95rem;
+    }
+    
+    .newsletter-modal-form label {
+        font-size: 0.75rem;
+    }
+    
+    .newsletter-modal-form input[type="email"],
+    .newsletter-modal-form select {
+        padding: 0.75rem 0.875rem;
+        font-size: 0.9rem;
+    }
+    
+    .form-group-checkbox {
+        margin-bottom: 1.25rem;
+    }
+    
+    .form-group-checkbox label {
+        font-size: 0.75rem;
+    }
+    
+    .form-disclaimer {
+        font-size: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .newsletter-submit {
+        padding: 0.875rem 1.75rem;
+        font-size: 0.7rem;
     }
 }
 
@@ -2000,45 +2044,96 @@ p {
     }
     
     /* Newsletter Modal - Mobile */
+    .newsletter-modal {
+        padding: 0.5rem;
+    }
+    
     .newsletter-modal-content {
-        max-height: 95vh;
+        max-height: 96vh;
+    }
+    
+    .newsletter-modal-grid {
+        min-height: auto;
     }
     
     .newsletter-modal-close {
-        top: 1rem;
-        right: 1rem;
-        width: 36px;
-        height: 36px;
+        top: 0.75rem;
+        right: 0.75rem;
+        width: 32px;
+        height: 32px;
         font-size: 1.5rem;
+        background-color: rgba(255, 255, 255, 0.95);
     }
     
     .newsletter-modal-image {
-        min-height: 200px;
+        min-height: 150px;
+        max-height: 180px;
     }
     
     .newsletter-modal-overlay-text {
-        padding: 1.5rem;
+        padding: 1rem;
     }
     
     .newsletter-modal-overlay-text h2 {
-        font-size: 1.5rem;
+        font-size: 1.35rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.2;
     }
     
     .newsletter-modal-overlay-text p {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
+        line-height: 1.5;
     }
     
     .newsletter-modal-form {
-        padding: 1.5rem;
+        padding: 1.25rem;
     }
     
     .newsletter-modal-form .form-group {
-        margin-bottom: 1.25rem;
+        margin-bottom: 1rem;
+    }
+    
+    .newsletter-modal-form label {
+        font-size: 0.7rem;
+        margin-bottom: 0.4rem;
+    }
+    
+    .newsletter-modal-form input[type="email"],
+    .newsletter-modal-form select {
+        padding: 0.7rem 0.8rem;
+        font-size: 0.875rem;
+    }
+    
+    .form-group-checkbox {
+        gap: 0.6rem;
+        margin-bottom: 1rem;
+    }
+    
+    .form-group-checkbox input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+        margin-top: 0.2rem;
+    }
+    
+    .form-group-checkbox label {
+        font-size: 0.7rem;
+        line-height: 1.5;
     }
     
     .form-disclaimer {
-        font-size: 0.8rem;
-        margin-bottom: 1.5rem;
+        font-size: 0.7rem;
+        line-height: 1.5;
+        margin-bottom: 1.25rem;
+    }
+    
+    .newsletter-submit {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.65rem;
+    }
+    
+    .form-message {
+        font-size: 0.75rem;
+        padding: 0.6rem;
     }
 }
 
@@ -2183,6 +2278,64 @@ p {
     .footer-contact {
         font-size: 0.8rem;
     }
+    
+    /* Newsletter Modal - Landscape */
+    .newsletter-modal-grid {
+        grid-template-columns: 1fr 1.2fr;
+        min-height: auto;
+    }
+    
+    .newsletter-modal-image {
+        min-height: 100%;
+        max-height: none;
+        order: 1;
+    }
+    
+    .newsletter-modal-form {
+        padding: 1.5rem;
+        overflow-y: auto;
+        max-height: 80vh;
+    }
+    
+    .newsletter-modal-form .form-group {
+        margin-bottom: 1rem;
+    }
+    
+    .newsletter-modal-overlay-text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .newsletter-modal-overlay-text p {
+        font-size: 0.85rem;
+    }
+    
+    .newsletter-modal-form label {
+        font-size: 0.7rem;
+    }
+    
+    .newsletter-modal-form input[type="email"],
+    .newsletter-modal-form select {
+        padding: 0.65rem 0.85rem;
+        font-size: 0.85rem;
+    }
+    
+    .form-group-checkbox {
+        margin-bottom: 1rem;
+    }
+    
+    .form-group-checkbox label {
+        font-size: 0.7rem;
+    }
+    
+    .form-disclaimer {
+        font-size: 0.7rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .newsletter-submit {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.65rem;
+    }
 }
 
 /* Small Mobile Landscape (like iPhone SE landscape) */
@@ -2236,6 +2389,96 @@ p {
     /* Better use of horizontal space */
     .container {
         padding: 0 2rem;
+    }
+    
+    /* Newsletter Modal - Small Landscape */
+    .newsletter-modal {
+        padding: 0.25rem;
+    }
+    
+    .newsletter-modal-content {
+        max-height: 98vh;
+    }
+    
+    .newsletter-modal-grid {
+        grid-template-columns: 0.9fr 1.1fr;
+    }
+    
+    .newsletter-modal-close {
+        top: 0.5rem;
+        right: 0.5rem;
+        width: 28px;
+        height: 28px;
+        font-size: 1.25rem;
+    }
+    
+    .newsletter-modal-image {
+        min-height: 100%;
+    }
+    
+    .newsletter-modal-overlay-text {
+        padding: 0.875rem;
+    }
+    
+    .newsletter-modal-overlay-text h2 {
+        font-size: 1.25rem;
+        margin-bottom: 0.4rem;
+    }
+    
+    .newsletter-modal-overlay-text p {
+        font-size: 0.75rem;
+    }
+    
+    .newsletter-modal-form {
+        padding: 1rem;
+        max-height: 96vh;
+    }
+    
+    .newsletter-modal-form .form-group {
+        margin-bottom: 0.75rem;
+    }
+    
+    .newsletter-modal-form label {
+        font-size: 0.65rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .newsletter-modal-form input[type="email"],
+    .newsletter-modal-form select {
+        padding: 0.55rem 0.75rem;
+        font-size: 0.8rem;
+    }
+    
+    .form-group-checkbox {
+        gap: 0.5rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .form-group-checkbox input[type="checkbox"] {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .form-group-checkbox label {
+        font-size: 0.65rem;
+        line-height: 1.4;
+    }
+    
+    .form-disclaimer {
+        font-size: 0.65rem;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+    }
+    
+    .newsletter-submit {
+        padding: 0.65rem 1.25rem;
+        font-size: 0.6rem;
+    }
+    
+    .form-message {
+        font-size: 0.7rem;
+        padding: 0.5rem;
+        margin-top: 0.75rem;
     }
 }
 
