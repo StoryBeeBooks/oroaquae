@@ -2,18 +2,27 @@
    Oro & Aquae Gallery - Main Stylesheet
    ========================================================================== */
 
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
 /* Root Variables */
 :root {
     --color-black: #000000;
     --color-white: #ffffff;
     --color-grey: #f5f5f5;
     --color-grey-light: #fafafa;
-    --color-grey-medium: #999999;
+    --color-grey-medium: #666666;
     --color-grey-dark: #e0e0e0;
     
-    --font-primary: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    --font-display: Georgia, 'Times New Roman', serif;
-    --font-detail: 'Segoe UI', Roboto, sans-serif;
+    /* Typography System - Inspired by Hermès & White Cube */
+    --font-serif: 'Crimson Text', 'Garamond', 'Georgia', 'Times New Roman', serif;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    --font-mono: 'Courier New', Courier, monospace;
+    
+    /* Legacy support - mapping old variables */
+    --font-primary: var(--font-sans);
+    --font-display: var(--font-serif);
+    --font-detail: var(--font-sans);
     
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
@@ -40,12 +49,15 @@ html {
 }
 
 body {
-    font-family: var(--font-primary);
-    line-height: 1.6;
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 400;
     color: var(--color-black);
     background-color: var(--color-white);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0.01em;
     margin: 0;
     padding: 0;
 }
@@ -90,9 +102,10 @@ a:hover {
 }
 
 .nav-logo {
-    font-family: var(--font-detail);
-    font-size: 1rem;
-    letter-spacing: 0.15em;
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--color-black);
     text-decoration: none;
@@ -526,9 +539,10 @@ a:hover {
 }
 
 .footer-copyright {
-    font-family: var(--font-detail);
-    font-size: 0.85rem;
-    letter-spacing: 0.08em;
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
     margin-bottom: 2rem;
     color: var(--color-white);
 }
@@ -542,9 +556,10 @@ a:hover {
 }
 
 .footer-links a {
-    font-family: var(--font-detail);
-    font-size: 0.9rem;
-    letter-spacing: 0.08em;
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
     color: var(--color-white);
     opacity: 0.8;
     transition: opacity 0.3s ease;
@@ -556,9 +571,10 @@ a:hover {
 }
 
 .footer-contact {
-    font-family: var(--font-detail);
-    font-size: 0.9rem;
-    letter-spacing: 0.08em;
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
 }
 
 .footer-contact a {
@@ -778,35 +794,36 @@ ul {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-display);
+    font-family: var(--font-serif);
     line-height: 1.2;
+    font-weight: 400;
     margin-bottom: var(--spacing-sm);
+    letter-spacing: 0.01em;
 }
 
 h1 {
     font-size: 3rem;
-    font-weight: 400;
 }
 
 h2 {
-    font-size: 2rem;
-    font-weight: 400;
+    font-size: 2.25rem;
 }
 
 h3 {
     font-size: 1.5rem;
-    font-weight: 400;
 }
 
 h4 {
-    font-size: 1.125rem;
-    font-weight: 600;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
 }
 
 p {
     margin-bottom: var(--spacing-sm);
+    line-height: 1.7;
 }
 
 /* Layout */
@@ -1338,18 +1355,21 @@ p {
 }
 
 .form-group label {
-    font-weight: 600;
-    font-size: 0.875rem;
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
 }
 
 .form-group input,
 .form-group textarea {
-    padding: var(--spacing-sm);
+    padding: 0.875rem 1rem;
     border: 1px solid var(--color-grey-dark);
-    font-family: inherit;
+    font-family: var(--font-sans);
     font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
 }
 
 .form-group input:focus,
@@ -1403,15 +1423,16 @@ p {
 /* Buttons */
 .btn-primary {
     display: inline-block;
-    padding: var(--spacing-sm) var(--spacing-lg);
+    padding: 0.875rem 2rem;
     background-color: var(--color-black);
     color: var(--color-white);
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-size: 0.875rem;
-    font-weight: 600;
+    letter-spacing: 0.15em;
     transition: var(--transition-base);
-    border: 2px solid var(--color-black);
+    border: 1px solid var(--color-black);
 }
 
 .btn-primary:hover {

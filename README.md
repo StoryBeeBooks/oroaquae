@@ -1,6 +1,91 @@
 # Oro & Aquae Art Gallery Website
 
-A contemporary art gallery website showcasing artists and their works.
+A contemporary art gallery website showcasing artists and their works with elegant typography inspired by Hermès and White Cube.
+
+## Typography System
+
+### Font Families
+
+**Primary Fonts:**
+- **Serif:** `Crimson Text` - Used for display headings, large titles, and artistic content
+- **Sans-serif:** `Inter` - Used for body text, navigation, labels, and UI elements
+
+**Font Stack:**
+```css
+--font-serif: 'Crimson Text', 'Garamond', Georgia, 'Times New Roman', serif;
+--font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+```
+
+### Typography Hierarchy
+
+#### Headings
+- **H1 (Hero):** Crimson Text, 4.5rem (72px), weight 400, letter-spacing 0.02em
+- **H2 (Sections):** Crimson Text, 3rem (48px), weight 400, letter-spacing 0.01em, line-height 1.2
+- **H3 (Cards):** Inter, 1.25rem (20px), weight 400, letter-spacing 0.02em
+- **H4 (Subsections):** Inter, 1rem (16px), weight 500, letter-spacing 0.02em
+
+#### Body Text
+- **Body:** Inter, 1rem (16px), weight 400, line-height 1.7, letter-spacing 0.01em
+- **Small Text:** Inter, 0.875rem (14px), weight 400, letter-spacing 0.01em
+- **Captions:** Inter, 0.75rem (12px), weight 400, letter-spacing 0.02em
+
+#### Labels & Metadata
+- **Uppercase Labels:** Inter, 0.75-0.875rem, weight 500, letter-spacing 0.15-0.2em, uppercase
+- **Artist Names:** Inter, 1rem (16px), weight 400, letter-spacing 0.02em
+- **Dates/Details:** Inter, 0.95rem (15px), weight 400, letter-spacing 0.05em
+
+#### Navigation
+- **Logo:** Inter, 0.875rem (14px), weight 500, letter-spacing 0.2em, uppercase
+- **Nav Links:** Inter, 0.95rem (15px), weight 400, letter-spacing 0.08em
+
+### Font Weights
+- **Light:** 300 (used sparingly for italicized subtitles)
+- **Regular:** 400 (primary weight for body and headings)
+- **Medium:** 500 (navigation, labels, UI elements)
+- **Semibold:** 600 (emphasis, CTAs)
+
+### Letter Spacing
+- **Tight:** 0.01em (large headings, body text)
+- **Normal:** 0.02-0.05em (subheadings, artist names)
+- **Loose:** 0.08-0.15em (labels, metadata)
+- **Extra Loose:** 0.2em (logo, uppercase elements)
+
+### Line Height
+- **Headings:** 1.1-1.2 (tight for impact)
+- **Body:** 1.7 (comfortable reading)
+- **UI Elements:** 1.5 (compact but legible)
+
+### Design Principles
+
+1. **Hierarchy:** Clear visual distinction between content levels using size and font family
+2. **Elegance:** Serif for artistic/emotional content, sans-serif for functional content
+3. **Readability:** Generous line-height (1.7) and letter-spacing for body text
+4. **Consistency:** All uppercase elements use Inter with increased letter-spacing
+5. **Refinement:** Subtle letter-spacing adjustments enhance sophistication
+6. **Balance:** Mix of serif (30%) and sans-serif (70%) creates visual interest
+
+### Usage Guidelines
+
+**Use Crimson Text (Serif) for:**
+- Hero titles and main page headings
+- Artist names in hero sections
+- Exhibition titles
+- Large, impactful typography
+- Artistic or emotional content
+
+**Use Inter (Sans-serif) for:**
+- Body copy and paragraphs
+- Navigation and menus
+- Form labels and inputs
+- Buttons and CTAs
+- Metadata (dates, dimensions, locations)
+- Card titles and descriptions
+- Search and filter interfaces
+
+### Color & Typography Pairing
+- **Black text (#000000)** on white background for maximum contrast
+- **Medium grey (#666666)** for secondary information and metadata
+- **White text** on dark backgrounds with text-shadow for readability
 
 ## Project Structure
 
