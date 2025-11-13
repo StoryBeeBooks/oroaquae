@@ -1,38 +1,6 @@
 <!DOCTYPE html>
 <html class="js" lang="en" dir="ltr">
-    <script>
-        function artistsPage() {
-            return {
-                artists: [],
-                filteredArtists: [],
-                searchQuery: '',
-                showSearch: false,
-                artistColumns: [],
-                async init() {
-                    const res = await fetch('data/artists.json');
-                    this.artists = await res.json();
-                    this.sortArtists();
-                    this.splitColumns();
-                    this.filteredArtists = this.artists;
-                },
-                sortArtists() {
-                    this.artists.sort((a, b) => a.name.localeCompare(b.name));
-                },
-                splitColumns() {
-                    // Split artists into 6 columns for grid
-                    const columns = 6;
-                    const perCol = Math.ceil(this.artists.length / columns);
-                    this.artistColumns = Array.from({ length: columns }, (_, i) =>
-                        this.artists.slice(i * perCol, (i + 1) * perCol)
-                    );
-                },
-                filterArtists() {
-                    const q = this.searchQuery.trim().toLowerCase();
-                    this.filteredArtists = this.artists.filter(a => a.name.toLowerCase().includes(q));
-                }
-            }
-        }
-    </script>
+    <!-- Alpine.js logic is defined once at the bottom of the file -->
         <!-- Page Header -->
         <section class="page-header">
             <div class="container">

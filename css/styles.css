@@ -1,3 +1,32 @@
+/* Artists List Section (alphabetical grid) */
+.artists-list-section {
+    padding: 2rem 0 0 0;
+}
+.artists-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.artists-list-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem 1.5rem;
+}
+.artists-list-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.artists-list-name {
+    font-family: var(--font-detail);
+    font-size: 1rem;
+    color: var(--color-black);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.artists-list-name:hover {
+    color: var(--color-grey-dark);
+    text-decoration: underline;
+}
 /* ==========================================================================
    Oro & Aquae Gallery - Main Stylesheet
    ========================================================================== */
