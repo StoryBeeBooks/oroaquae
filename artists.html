@@ -11,6 +11,9 @@
 </head>
 <body x-data="artistsPage()" class="relative flex flex-col min-h-screen bg-white text-black antialiased">
     
+    <!-- Navigation Container (loaded dynamically) -->
+    <div id="nav-container"></div>
+    
     <!-- Skip to content link -->
     <a href="#main" class="skip-link">Skip to content</a>
 
@@ -199,6 +202,7 @@
     <!-- Footer Container (loaded dynamically) -->
     <div id="footer-container"></div>
     
+    <script src="js/nav-loader.js"></script>
     <script src="js/footer-loader.js"></script>
 </body>
 </html>
