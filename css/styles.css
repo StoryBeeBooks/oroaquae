@@ -117,7 +117,7 @@ a:hover {
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 2.5rem 3.5rem;
     z-index: 10;
@@ -130,20 +130,7 @@ a:hover {
 
 .nav-left,
 .nav-right {
-    display: flex;
-    gap: 2.5rem;
-}
-
-.nav-left a,
-.nav-right a {
-    color: var(--color-white);
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    transition: opacity 0.3s ease;
-}
-
-.nav-left a:hover,
-.nav-right a:hover {
-    opacity: 0.8;
+    display: none;
 }
 
 .nav-center {
@@ -175,33 +162,15 @@ a:hover {
     font-weight: 400;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
     text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 }
 
-.hero-subtitle {
-    font-family: var(--font-detail);
-    font-size: 2rem;
-    font-style: italic;
-    font-weight: 300;
-    letter-spacing: 0.05em;
-    margin-bottom: 1rem;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-
-.hero-location {
+.hero-artist-link {
+    display: inline-block;
     font-family: var(--font-detail);
     font-size: 1.1rem;
     letter-spacing: 0.08em;
-    margin-bottom: 1.5rem;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-
-.hero-cta {
-    display: inline-block;
-    font-family: var(--font-detail);
-    font-size: 0.95rem;
-    letter-spacing: 0.1em;
     color: var(--color-white);
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     padding: 0.5rem 1rem;
@@ -209,9 +178,15 @@ a:hover {
     transition: all 0.3s ease;
 }
 
-.hero-cta:hover {
+.hero-artist-link:hover {
     background: rgba(255, 255, 255, 0.1);
     border-color: rgba(255, 255, 255, 0.8);
+}
+
+.hero-subtitle,
+.hero-location,
+.hero-cta {
+    display: none;
 }
 
 /* ========================================================================== */
