@@ -46,12 +46,7 @@
                     <template x-for="artist in filteredArtists" :key="artist.id">
                         <a :href="'artist.html?id=' + artist.id" class="artist-card">
                             <div class="artist-card-image">
-                                <template x-if="artist.id === 'ting-ting-gao'">
-                                    <img src="Ting Ting Gao/tingtinggao1.jpg" :alt="artist.name">
-                                </template>
-                                <template x-if="artist.id !== 'ting-ting-gao'">
-                                    <div class="placeholder-image" x-text="artist.name"></div>
-                                </template>
+                                <img :src="artist.thumbnailImage" :alt="artist.name">
                             </div>
                             <div class="artist-card-info">
                                 <h3 x-text="artist.name"></h3>

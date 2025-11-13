@@ -4,6 +4,7 @@
       "id": "ting-ting-gao",
       "name": "Ting Ting Gao",
       "birthYear": "1990",
+      "thumbnailImage": "Ting Ting Gao/tingtinggao1.jpg",
       "biography": "<p>Ting Ting Gao is a contemporary artist whose work explores the intersection of traditional Chinese aesthetics and modern urban experiences. Born in 1990, Gao's practice spans painting, mixed media, and installation art.</p><p>Her distinctive visual language combines delicate brushwork with bold compositional structures, creating works that bridge Eastern and Western artistic traditions. Through her art, Gao investigates themes of cultural identity, memory, and transformation in an increasingly globalized world.</p><p>Gao has exhibited internationally and her works are held in private collections across North America and Asia. She currently lives and works in Vancouver, Canada.</p>",
       "artworks": [
         {
@@ -61,43 +62,363 @@
       "id": "susan-g-scott",
       "name": "Susan G. Scott",
       "birthYear": "1965",
+      "thumbnailImage": "Susan G. Scott/SusanScott1.jpg",
       "biography": "<p>Susan G. Scott is a multidisciplinary artist whose practice encompasses sculpture, installation, and performance art. Born in 1965, Scott has spent over three decades developing a unique artistic voice that challenges conventional notions of space, materiality, and viewer engagement.</p><p>Her work is characterized by an exploration of organic forms and natural materials, often creating immersive environments that invite contemplation and sensory experience. Scott's sculptures balance delicacy and strength, ephemeral and permanent, creating dialogues between opposing forces.</p><p>Scott has received numerous awards and grants, and her work has been exhibited in major galleries and museums internationally. She is based in Toronto, Canada.</p>",
-      "artworks": []
+      "artworks": [
+        {
+          "title": "Organic Form I",
+          "year": "2023",
+          "medium": "Sculpture",
+          "dimensions": "Variable",
+          "image": "Susan G. Scott/SusanScott1.jpg"
+        },
+        {
+          "title": "Installation Series",
+          "year": "2023",
+          "medium": "Mixed media",
+          "dimensions": "Variable",
+          "image": "Susan G. Scott/SusanScott2.jpg"
+        },
+        {
+          "title": "Natural Elements",
+          "year": "2024",
+          "medium": "Sculpture",
+          "dimensions": "Variable",
+          "image": "Susan G. Scott/SusanScott4.jpg"
+        },
+        {
+          "title": "Ephemeral Structures",
+          "year": "2024",
+          "medium": "Installation",
+          "dimensions": "Variable",
+          "image": "Susan G. Scott/SusanScott6.jpg"
+        },
+        {
+          "title": "Balance",
+          "year": "2023",
+          "medium": "Sculpture",
+          "dimensions": "Variable",
+          "image": "Susan G. Scott/SusanScott8.jpg"
+        },
+        {
+          "title": "Dialogue",
+          "year": "2024",
+          "medium": "Mixed media",
+          "dimensions": "Variable",
+          "image": "Susan G. Scott/SusanScott9.jpg"
+        }
+      ]
     },
     {
       "id": "shelley-adler",
       "name": "Shelley Adler",
       "birthYear": "1978",
+      "thumbnailImage": "Shelley Adler/ShelleyAdler1.jpg",
       "biography": "<p>Shelley Adler is a contemporary painter known for her vibrant, emotionally charged canvases that explore themes of identity, femininity, and psychological landscapes. Born in 1978, Adler's work has evolved from figurative expressionism to increasingly abstract compositions.</p><p>Her paintings are distinguished by bold color palettes and gestural mark-making, creating dynamic surfaces that pulse with energy. Adler's practice is deeply introspective, drawing from personal experience while addressing universal themes of human connection and isolation.</p><p>Adler holds an MFA from Emily Carr University and has exhibited extensively throughout Canada and the United States. She maintains her studio practice in Vancouver.</p>",
-      "artworks": []
+      "artworks": [
+        {
+          "title": "Fluid Expressions I",
+          "year": "2023",
+          "medium": "Acrylic on canvas",
+          "dimensions": "48 x 60 inches",
+          "image": "Shelley Adler/ShelleyAdler1.jpg"
+        },
+        {
+          "title": "Abstract Emotions",
+          "year": "2023",
+          "medium": "Mixed media on canvas",
+          "dimensions": "36 x 48 inches",
+          "image": "Shelley Adler/ShelleyAdler2.jpg"
+        },
+        {
+          "title": "Color Study No. 5",
+          "year": "2024",
+          "medium": "Oil on canvas",
+          "dimensions": "40 x 52 inches",
+          "image": "Shelley Adler/ShelleyAdler3.jpg"
+        },
+        {
+          "title": "Psychological Landscape",
+          "year": "2024",
+          "medium": "Acrylic and ink on canvas",
+          "dimensions": "60 x 72 inches",
+          "image": "Shelley Adler/ShelleyAdler4.jpg"
+        },
+        {
+          "title": "Inner Dialogue",
+          "year": "2023",
+          "medium": "Oil on linen",
+          "dimensions": "30 x 40 inches",
+          "image": "Shelley Adler/ShelleyAdler5.jpg"
+        },
+        {
+          "title": "Gestural Composition",
+          "year": "2024",
+          "medium": "Acrylic on canvas",
+          "dimensions": "54 x 66 inches",
+          "image": "Shelley Adler/ShelleyAdler6.jpg"
+        }
+      ]
     },
     {
       "id": "christine-reimer",
       "name": "Christine Reimer",
       "birthYear": "1972",
+      "thumbnailImage": "Christine Reimer/ChristineReimer1.jpg",
       "biography": "<p>Christine Reimer is a conceptual artist whose interdisciplinary practice investigates the relationship between language, image, and meaning. Born in 1972, Reimer works across photography, text-based art, installation, and video.</p><p>Her work often employs systems of classification and archival methods to examine how we construct narratives and preserve memory. Through meticulous research and careful formal considerations, Reimer creates works that are both intellectually rigorous and visually compelling.</p><p>Reimer has exhibited nationally and internationally, with works in numerous public and private collections. She is a Professor of Art at a leading Canadian university and maintains an active studio practice in Calgary.</p>",
-      "artworks": []
+      "artworks": [
+        {
+          "title": "Archival Studies I",
+          "year": "2023",
+          "medium": "Photography and text",
+          "dimensions": "Variable",
+          "image": "Christine Reimer/ChristineReimer1.jpg"
+        },
+        {
+          "title": "Memory Systems",
+          "year": "2023",
+          "medium": "Mixed media installation",
+          "dimensions": "Variable",
+          "image": "Christine Reimer/ChristineReimer2.jpg"
+        },
+        {
+          "title": "Classification Series No. 3",
+          "year": "2024",
+          "medium": "Photography",
+          "dimensions": "30 x 40 inches",
+          "image": "Christine Reimer/ChristineReimer3.jpg"
+        },
+        {
+          "title": "Narrative Construction",
+          "year": "2024",
+          "medium": "Text and image",
+          "dimensions": "Variable",
+          "image": "Christine Reimer/ChristineReimer4.jpg"
+        },
+        {
+          "title": "Documentary Evidence",
+          "year": "2023",
+          "medium": "Photography",
+          "dimensions": "24 x 36 inches",
+          "image": "Christine Reimer/ChristineReimer5.jpg"
+        },
+        {
+          "title": "Language and Meaning",
+          "year": "2024",
+          "medium": "Installation",
+          "dimensions": "Variable",
+          "image": "Christine Reimer/ChristineReimer6.jpg"
+        },
+        {
+          "title": "Preservation Study",
+          "year": "2024",
+          "medium": "Mixed media",
+          "dimensions": "48 x 60 inches",
+          "image": "Christine Reimer/ChristineReimer7.jpg"
+        }
+      ]
     },
     {
       "id": "leonel-jules",
       "name": "Leonel Jules",
       "birthYear": "1983",
+      "thumbnailImage": "Leonel Jules/LeonelJules1.jpg",
       "biography": "<p>Leonel Jules is a contemporary artist whose practice explores issues of diaspora, cultural hybridity, and postcolonial identity. Born in 1983 in Haiti, Jules immigrated to Canada as a young adult, and this experience of migration profoundly informs his artistic vision.</p><p>Working primarily in painting and collage, Jules creates layered compositions that incorporate imagery from Caribbean history, popular culture, and personal memory. His works are vibrant celebrations of Afro-Caribbean culture while also addressing complex questions of belonging and representation.</p><p>Jules has received critical acclaim for his exhibitions across North America and his work is included in several museum collections. He lives and works in Montreal.</p>",
-      "artworks": []
+      "artworks": [
+        {
+          "title": "Diaspora Dreams",
+          "year": "2023",
+          "medium": "Mixed media and collage on canvas",
+          "dimensions": "48 x 60 inches",
+          "image": "Leonel Jules/LeonelJules1.jpg"
+        },
+        {
+          "title": "Cultural Memory",
+          "year": "2023",
+          "medium": "Acrylic and collage on canvas",
+          "dimensions": "36 x 48 inches",
+          "image": "Leonel Jules/LeonelJules2.jpg"
+        },
+        {
+          "title": "Caribbean Fragments",
+          "year": "2024",
+          "medium": "Mixed media on canvas",
+          "dimensions": "40 x 52 inches",
+          "image": "Leonel Jules/LeonelJules3.jpg"
+        },
+        {
+          "title": "Hybrid Identity",
+          "year": "2024",
+          "medium": "Collage and painting",
+          "dimensions": "54 x 66 inches",
+          "image": "Leonel Jules/LeonelJules4.jpg"
+        },
+        {
+          "title": "Postcolonial Narrative",
+          "year": "2023",
+          "medium": "Mixed media on canvas",
+          "dimensions": "30 x 40 inches",
+          "image": "Leonel Jules/LeonelJules5.jpg"
+        },
+        {
+          "title": "Belonging",
+          "year": "2024",
+          "medium": "Acrylic and collage",
+          "dimensions": "48 x 60 inches",
+          "image": "Leonel Jules/LeonelJules6.jpg"
+        },
+        {
+          "title": "Migration Stories",
+          "year": "2024",
+          "medium": "Mixed media on canvas",
+          "dimensions": "42 x 54 inches",
+          "image": "Leonel Jules/LeonelJules7.jpg"
+        },
+        {
+          "title": "Cultural Celebration",
+          "year": "2023",
+          "medium": "Collage and painting",
+          "dimensions": "36 x 48 inches",
+          "image": "Leonel Jules/LeonelJules8.jpg"
+        },
+        {
+          "title": "Afro-Caribbean Heritage",
+          "year": "2024",
+          "medium": "Mixed media on canvas",
+          "dimensions": "60 x 72 inches",
+          "image": "Leonel Jules/LeonelJules9.jpg"
+        }
+      ]
     },
     {
       "id": "andy-dixon",
       "name": "Andy Dixon",
       "birthYear": "1979",
+      "thumbnailImage": "Andy Dixon/andydixon1.jpg",
       "biography": "<p>Andy Dixon is a painter and sculptor known for his darkly humorous take on consumer culture, celebrity, and the art world itself. Born in 1979, Dixon's practice is characterized by technical virtuosity combined with a punk sensibility and irreverent wit.</p><p>His paintings often reference art historical traditions while subverting them through contemporary subject matter and bold compositional choices. Dixon's work has been described as both a critique and celebration of contemporary visual culture, navigating the space between high and low art with confidence and humor.</p><p>Dixon has exhibited internationally and his works are held in collections worldwide. He is based in Vancouver, where he maintains an active studio practice.</p>",
-      "artworks": []
+      "artworks": [
+        {
+          "title": "Consumer Culture I",
+          "year": "2023",
+          "medium": "Oil on canvas",
+          "dimensions": "48 x 60 inches",
+          "image": "Andy Dixon/andydixon1.jpg"
+        },
+        {
+          "title": "Celebrity Study",
+          "year": "2023",
+          "medium": "Acrylic on canvas",
+          "dimensions": "36 x 48 inches",
+          "image": "Andy Dixon/andydixon2.jpg"
+        },
+        {
+          "title": "Art World Critique",
+          "year": "2024",
+          "medium": "Oil on linen",
+          "dimensions": "40 x 52 inches",
+          "image": "Andy Dixon/andydixon3.jpg"
+        },
+        {
+          "title": "Contemporary Irony",
+          "year": "2024",
+          "medium": "Mixed media on canvas",
+          "dimensions": "54 x 66 inches",
+          "image": "Andy Dixon/andydixon4.jpg"
+        },
+        {
+          "title": "High/Low",
+          "year": "2023",
+          "medium": "Oil on canvas",
+          "dimensions": "30 x 40 inches",
+          "image": "Andy Dixon/andydixon5.jpg"
+        },
+        {
+          "title": "Visual Culture",
+          "year": "2024",
+          "medium": "Acrylic and oil on canvas",
+          "dimensions": "48 x 60 inches",
+          "image": "Andy Dixon/andydixon6.jpg"
+        },
+        {
+          "title": "Punk Aesthetics",
+          "year": "2024",
+          "medium": "Oil on canvas",
+          "dimensions": "42 x 54 inches",
+          "image": "Andy Dixon/andydixon7.jpg"
+        },
+        {
+          "title": "Art Historical Reference",
+          "year": "2023",
+          "medium": "Mixed media on canvas",
+          "dimensions": "60 x 72 inches",
+          "image": "Andy Dixon/andydixon8.jpg"
+        }
+      ]
     },
     {
       "id": "ben-walmsley",
       "name": "Ben Walmsley",
       "birthYear": "1988",
+      "thumbnailImage": "Ben Walmsley/BenWalmsley1.jpg",
       "biography": "<p>Ben Walmsley is an emerging artist whose practice centers on landscape painting and environmental awareness. Born in 1988, Walmsley brings a contemporary perspective to the Canadian landscape tradition, addressing themes of climate change and human impact on natural environments.</p><p>His paintings are notable for their atmospheric quality and subtle color harmonies, evoking both the beauty and fragility of wilderness spaces. Walmsley's work invites viewers to consider their relationship with nature and the urgent need for environmental stewardship.</p><p>Walmsley has rapidly gained recognition in the Canadian art scene and has participated in numerous group and solo exhibitions. He works from his studio in British Columbia, drawing inspiration from the surrounding forests and coastlines.</p>",
-      "artworks": []
+      "artworks": [
+        {
+          "title": "Coastal Wilderness",
+          "year": "2023",
+          "medium": "Oil on canvas",
+          "dimensions": "48 x 60 inches",
+          "image": "Ben Walmsley/BenWalmsley1.jpg"
+        },
+        {
+          "title": "Forest Study I",
+          "year": "2023",
+          "medium": "Acrylic on canvas",
+          "dimensions": "36 x 48 inches",
+          "image": "Ben Walmsley/BenWalmsley2.jpg"
+        },
+        {
+          "title": "Climate Reflection",
+          "year": "2024",
+          "medium": "Oil on linen",
+          "dimensions": "40 x 52 inches",
+          "image": "Ben Walmsley/BenWalmsley3.jpg"
+        },
+        {
+          "title": "Atmospheric Landscape",
+          "year": "2024",
+          "medium": "Oil on canvas",
+          "dimensions": "54 x 66 inches",
+          "image": "Ben Walmsley/BenWalmsley4.jpg"
+        },
+        {
+          "title": "Fragile Beauty",
+          "year": "2023",
+          "medium": "Acrylic on canvas",
+          "dimensions": "30 x 40 inches",
+          "image": "Ben Walmsley/BenWalmsley5.jpg"
+        },
+        {
+          "title": "Environmental Awareness",
+          "year": "2024",
+          "medium": "Oil on canvas",
+          "dimensions": "48 x 60 inches",
+          "image": "Ben Walmsley/BenWalmsley6.jpg"
+        },
+        {
+          "title": "BC Coastline",
+          "year": "2024",
+          "medium": "Oil on linen",
+          "dimensions": "42 x 54 inches",
+          "image": "Ben Walmsley/BenWalmsley7.jpg"
+        },
+        {
+          "title": "Wilderness Preservation",
+          "year": "2023",
+          "medium": "Acrylic on canvas",
+          "dimensions": "60 x 72 inches",
+          "image": "Ben Walmsley/BenWalmsley8.jpg"
+        }
+      ]
     }
   ]
 }
