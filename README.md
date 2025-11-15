@@ -104,7 +104,7 @@ OroAquae/
 │   └── styles.css         # Main stylesheet
 ├── data/
 │   └── artists.json       # Artist data (JSON format)
-├── Ting Ting Gao/         # Artist artwork folder
+├── Ting Ting Gao/         # Sophia Gao artwork folder
 │   ├── tingtinggao1.jpg
 │   ├── tingtinggao2.jpg
 │   └── ... (7 images total)
@@ -177,7 +177,7 @@ OroAquae/
 ```
 
 ### Current Artists
-1. Ting Ting Gao (with 7 artworks)
+1. Sophia Gao (with 7 artworks)
 2. Susan G. Scott
 3. Shelley Adler
 4. Christine Reimer
