@@ -2280,6 +2280,10 @@ p {
     }
     
     /* Newsletter Modal - Landscape */
+    .newsletter-modal-content {
+        max-width: 770px;
+    }
+    
     .newsletter-modal-grid {
         grid-template-columns: 1fr 1.2fr;
         min-height: auto;
@@ -2292,49 +2296,62 @@ p {
     }
     
     .newsletter-modal-form {
-        padding: 1.5rem;
+        padding: 1.25rem;
         overflow-y: auto;
-        max-height: 80vh;
+        max-height: 75vh;
     }
     
     .newsletter-modal-form .form-group {
-        margin-bottom: 1rem;
+        margin-bottom: 0.85rem;
+    }
+    
+    .newsletter-modal-overlay-text {
+        padding: 1.25rem;
     }
     
     .newsletter-modal-overlay-text h2 {
-        font-size: 1.5rem;
+        font-size: 1.35rem;
+        margin-bottom: 0.5rem;
     }
     
     .newsletter-modal-overlay-text p {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
     }
     
     .newsletter-modal-form label {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
+        margin-bottom: 0.35rem;
     }
     
     .newsletter-modal-form input[type="email"],
     .newsletter-modal-form select {
-        padding: 0.65rem 0.85rem;
-        font-size: 0.85rem;
+        padding: 0.6rem 0.8rem;
+        font-size: 0.8rem;
     }
     
     .form-group-checkbox {
-        margin-bottom: 1rem;
+        margin-bottom: 0.85rem;
+    }
+    
+    .form-group-checkbox input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
     }
     
     .form-group-checkbox label {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
+        line-height: 1.4;
     }
     
     .form-disclaimer {
-        font-size: 0.7rem;
-        margin-bottom: 1.25rem;
+        font-size: 0.65rem;
+        line-height: 1.4;
+        margin-bottom: 1rem;
     }
     
     .newsletter-submit {
-        padding: 0.75rem 1.5rem;
-        font-size: 0.65rem;
+        padding: 0.7rem 1.4rem;
+        font-size: 0.6rem;
     }
 }
 
@@ -2398,18 +2415,19 @@ p {
     
     .newsletter-modal-content {
         max-height: 98vh;
+        max-width: 630px;
     }
     
     .newsletter-modal-grid {
-        grid-template-columns: 0.9fr 1.1fr;
+        grid-template-columns: 0.85fr 1.15fr;
     }
     
     .newsletter-modal-close {
-        top: 0.5rem;
-        right: 0.5rem;
-        width: 28px;
-        height: 28px;
-        font-size: 1.25rem;
+        top: 0.4rem;
+        right: 0.4rem;
+        width: 26px;
+        height: 26px;
+        font-size: 1.15rem;
     }
     
     .newsletter-modal-image {
@@ -2417,68 +2435,70 @@ p {
     }
     
     .newsletter-modal-overlay-text {
-        padding: 0.875rem;
+        padding: 0.75rem;
     }
     
     .newsletter-modal-overlay-text h2 {
-        font-size: 1.25rem;
-        margin-bottom: 0.4rem;
+        font-size: 1.1rem;
+        margin-bottom: 0.35rem;
+        line-height: 1.2;
     }
     
     .newsletter-modal-overlay-text p {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
+        line-height: 1.4;
     }
     
     .newsletter-modal-form {
-        padding: 1rem;
+        padding: 0.85rem;
         max-height: 96vh;
     }
     
     .newsletter-modal-form .form-group {
-        margin-bottom: 0.75rem;
+        margin-bottom: 0.65rem;
     }
     
     .newsletter-modal-form label {
-        font-size: 0.65rem;
-        margin-bottom: 0.3rem;
+        font-size: 0.6rem;
+        margin-bottom: 0.25rem;
     }
     
     .newsletter-modal-form input[type="email"],
     .newsletter-modal-form select {
-        padding: 0.55rem 0.75rem;
-        font-size: 0.8rem;
+        padding: 0.5rem 0.7rem;
+        font-size: 0.75rem;
     }
     
     .form-group-checkbox {
-        gap: 0.5rem;
-        margin-bottom: 0.75rem;
+        gap: 0.45rem;
+        margin-bottom: 0.65rem;
     }
     
     .form-group-checkbox input[type="checkbox"] {
-        width: 14px;
-        height: 14px;
+        width: 13px;
+        height: 13px;
     }
     
     .form-group-checkbox label {
-        font-size: 0.65rem;
-        line-height: 1.4;
+        font-size: 0.6rem;
+        line-height: 1.35;
     }
     
     .form-disclaimer {
-        font-size: 0.65rem;
-        line-height: 1.4;
-        margin-bottom: 1rem;
+        font-size: 0.6rem;
+        line-height: 1.35;
+        margin-bottom: 0.85rem;
     }
     
     .newsletter-submit {
-        padding: 0.65rem 1.25rem;
-        font-size: 0.6rem;
+        padding: 0.6rem 1.15rem;
+        font-size: 0.55rem;
     }
     
     .form-message {
-        font-size: 0.7rem;
-        padding: 0.5rem;
-        margin-top: 0.75rem;
+        font-size: 0.65rem;
+        padding: 0.45rem;
+        margin-top: 0.65rem;
     }
 }
 
