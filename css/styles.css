@@ -2281,7 +2281,7 @@ p {
     
     /* Newsletter Modal - Landscape */
     .newsletter-modal-content {
-        max-width: 770px;
+        max-width: 616px;
     }
     
     .newsletter-modal-grid {
@@ -2415,7 +2415,7 @@ p {
     
     .newsletter-modal-content {
         max-height: 98vh;
-        max-width: 630px;
+        max-width: 504px;
     }
     
     .newsletter-modal-grid {
