@@ -259,6 +259,36 @@ a:hover {
     display: none;
 }
 
+/* Image Caption Styling */
+.image-caption {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    color: #888;
+    text-align: center;
+    margin-top: 0.5rem;
+    letter-spacing: 0.02em;
+    line-height: 1.4;
+}
+
+.hero .image-caption {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.artist-feature-image {
+    position: relative;
+}
+
+.artist-feature-image .image-caption {
+    margin-top: 0.75rem;
+    text-align: left;
+}
+
 /* ========================================================================== */
 /* ARTIST FEATURE SECTION */
 /* ========================================================================== */

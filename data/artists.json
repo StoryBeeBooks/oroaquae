@@ -3,67 +3,114 @@
     {
       "id": "ting-ting-gao",
       "name": "Sophia Gao",
-      "birthYear": "1990",
-      "thumbnailImage": "Ting Ting Gao/tingtinggao1.jpg",
-      "biography": "<p>Sophia Gao is a contemporary artist whose work explores the intersection of traditional Chinese aesthetics and modern urban experiences. Born in 1990, Gao's practice spans painting, mixed media, and installation art.</p><p>Her distinctive visual language combines delicate brushwork with bold compositional structures, creating works that bridge Eastern and Western artistic traditions. Through her art, Gao investigates themes of cultural identity, memory, and transformation in an increasingly globalized world.</p><p>Gao has exhibited internationally and her works are held in private collections across North America and Asia. She currently lives and works in Vancouver, Canada.</p>",
+      "thumbnailImage": "Sophia Gao/Unlimited No. 6 Oil on Canvas 30_ x 40_ 2016.jpg",
+      "biography": "<p>Sophia Gao is a contemporary artist whose work explores the intersection of traditional Chinese aesthetics and modern urban experiences. Gao's practice spans painting, mixed media, and installation art.</p><p>Her distinctive visual language combines delicate brushwork with bold compositional structures, creating works that bridge Eastern and Western artistic traditions. Through her art, Gao investigates themes of cultural identity, memory, and transformation in an increasingly globalized world.</p><p>Gao has exhibited internationally and her works are held in private collections across North America and Asia. She currently lives and works in Vancouver, Canada.</p>",
       "artworks": [
         {
-          "title": "Ethereal Landscape I",
-          "year": "2023",
-          "medium": "Mixed media on canvas",
-          "dimensions": "48 x 60 inches",
-          "image": "Ting Ting Gao/tingtinggao1.jpg"
+          "title": "Comet",
+          "year": "2015",
+          "medium": "Mixed Media on Canvas",
+          "dimensions": "12 x 12 inches",
+          "image": "Sophia Gao/Comet Mixed Media on Canvas 12 12 2015 SOLD.jpg"
         },
         {
-          "title": "Urban Dreams",
-          "year": "2023",
-          "medium": "Acrylic and ink on canvas",
-          "dimensions": "36 x 48 inches",
-          "image": "Ting Ting Gao/tingtinggao2.jpg"
+          "title": "Concept No.263",
+          "year": "2019",
+          "medium": "Oil on Canvas",
+          "dimensions": "48 x 72 inches",
+          "image": "Sophia Gao/Concept No.263 Oil on Canvas 4872_ 2019.jpg"
         },
         {
-          "title": "Memory Fragments",
-          "year": "2024",
-          "medium": "Mixed media on paper",
+          "title": "Coral Sea No.1",
+          "year": "2017",
+          "medium": "Oil, Acrylic and Flower on Canvas",
           "dimensions": "24 x 30 inches",
-          "image": "Ting Ting Gao/tingtinggao3.jpg"
+          "image": "Sophia Gao/Coral Sea No.1 Oil, Acrylic and Flower on Canvas 24_ x 30_ 2017 SOLD.jpg"
         },
         {
-          "title": "Convergence",
-          "year": "2024",
-          "medium": "Oil and gold leaf on canvas",
-          "dimensions": "40 x 52 inches",
-          "image": "Ting Ting Gao/tingtinggao4.jpg"
+          "title": "Coral Sea No.2",
+          "year": "2017",
+          "medium": "Acrylic on Canvas",
+          "dimensions": "24 x 30 inches",
+          "image": "Sophia Gao/Coral Sea No.2 Acrylic on Canvas 24_ x 30_ 2017.jpg"
         },
         {
-          "title": "Whispers of the Past",
-          "year": "2023",
-          "medium": "Watercolor and ink on silk",
-          "dimensions": "18 x 24 inches",
-          "image": "Ting Ting Gao/tingtinggao5.jpg"
+          "title": "Coral Sea No.3",
+          "year": "2017",
+          "medium": "Oil and Acrylic on Canvas",
+          "dimensions": "24 x 30 inches",
+          "image": "Sophia Gao/Coral Sea No.3 Oil and Acrylic on Canvas 24_ x 30_ 2017 SOLD.jpg"
         },
         {
-          "title": "Transcendence",
-          "year": "2024",
-          "medium": "Mixed media on canvas",
-          "dimensions": "60 x 72 inches",
-          "image": "Ting Ting Gao/tingtinggao6.jpg"
+          "title": "Coral Sea No.5",
+          "year": "2019",
+          "medium": "Acrylic on Canvas",
+          "dimensions": "18 x 48 inches",
+          "image": "Sophia Gao/Coral Sea No.5 Acrylic on Canvas 18_ x 48_ 2019.jpg"
         },
         {
-          "title": "Reflection Series No. 3",
-          "year": "2024",
-          "medium": "Acrylic on linen",
+          "title": "Flower on the Sea Series #18",
+          "year": "2017",
+          "medium": "Oil on Canvas",
+          "dimensions": "12 x 24 inches",
+          "image": "Sophia Gao/Flower on the Sea Series #18 Oil on Canvas 12_ x 24_ 2017 Commission Work SOLD.jpg"
+        },
+        {
+          "title": "Mist （氤氲） Series #5",
+          "year": "2017",
+          "medium": "Oil on Canvas",
+          "dimensions": "24 x 12 inches",
+          "image": "Sophia Gao/Mist （氤氲） Series #5 Oil on Canvas 24_ x 12_ 2017.jpg"
+        },
+        {
+          "title": "Mist （氤氲） Series #9",
+          "year": "2018",
+          "medium": "Oil on Canvas",
+          "dimensions": "60 x 48 inches",
+          "image": "Sophia Gao/Mist （氤氲） Series #9 Oil on Canvas 60_ x 48_ 2018 Commission Work SOLD.jpg"
+        },
+        {
+          "title": "Serenity",
+          "year": "2019",
+          "medium": "Oil and Acrylic on Canvas",
+          "dimensions": "24 x 36 inches",
+          "image": "Sophia Gao/Serenity Oil and Acrylic on Canvas 24_  36_ 2019 SOLD.jpg"
+        },
+        {
+          "title": "Soul's Pilgrimage II",
+          "year": "2017",
+          "medium": "Acrylic and Gold Leaf on Canvas",
+          "dimensions": "60 x 36 inches",
+          "image": "Sophia Gao/Soul_s Pilgrimage II Acrylic and Gold Leaf on Canvas 60_ x 36_ 2017 SOLD.jpg"
+        },
+        {
+          "title": "Unlimited No. 6",
+          "year": "2016",
+          "medium": "Oil on Canvas",
           "dimensions": "30 x 40 inches",
-          "image": "Ting Ting Gao/tingtinggao7.jpg"
+          "image": "Sophia Gao/Unlimited No. 6 Oil on Canvas 30_ x 40_ 2016.jpg"
+        },
+        {
+          "title": "Wave",
+          "year": "2017",
+          "medium": "Resin, Acrylic on Wood Panel",
+          "dimensions": "12 x 12 inches",
+          "image": "Sophia Gao/Wave Resin，Acrylic on Wood Panel, 12_ x 12_ 2017 SOLD.jpg"
+        },
+        {
+          "title": "Yellow Rhythm Series 5",
+          "year": "2019",
+          "medium": "Oil on Canvas",
+          "dimensions": "24 x 36 inches",
+          "image": "Sophia Gao/Yellow Rhythm Series 5 Oil on Canvas 2436 2019.jpg"
         }
       ]
     },
     {
       "id": "susan-g-scott",
       "name": "Susan G. Scott",
-      "birthYear": "1965",
       "thumbnailImage": "Susan G. Scott/SusanScott1.jpg",
-      "biography": "<p>Susan G. Scott is a multidisciplinary artist whose practice encompasses sculpture, installation, and performance art. Born in 1965, Scott has spent over three decades developing a unique artistic voice that challenges conventional notions of space, materiality, and viewer engagement.</p><p>Her work is characterized by an exploration of organic forms and natural materials, often creating immersive environments that invite contemplation and sensory experience. Scott's sculptures balance delicacy and strength, ephemeral and permanent, creating dialogues between opposing forces.</p><p>Scott has received numerous awards and grants, and her work has been exhibited in major galleries and museums internationally. She is based in Toronto, Canada.</p>",
+      "biography": "<p>Susan G. Scott is a multidisciplinary artist whose practice encompasses sculpture, installation, and performance art. Scott has spent over three decades developing a unique artistic voice that challenges conventional notions of space, materiality, and viewer engagement.</p><p>Her work is characterized by an exploration of organic forms and natural materials, often creating immersive environments that invite contemplation and sensory experience. Scott's sculptures balance delicacy and strength, ephemeral and permanent, creating dialogues between opposing forces.</p><p>Scott has received numerous awards and grants, and her work has been exhibited in major galleries and museums internationally. She is based in Toronto, Canada.</p>",
       "artworks": [
         {
           "title": "Organic Form I",
@@ -112,9 +159,8 @@
     {
       "id": "shelley-adler",
       "name": "Shelley Adler",
-      "birthYear": "1978",
       "thumbnailImage": "Shelley Adler/ShelleyAdler1.jpg",
-      "biography": "<p>Shelley Adler is a contemporary painter known for her vibrant, emotionally charged canvases that explore themes of identity, femininity, and psychological landscapes. Born in 1978, Adler's work has evolved from figurative expressionism to increasingly abstract compositions.</p><p>Her paintings are distinguished by bold color palettes and gestural mark-making, creating dynamic surfaces that pulse with energy. Adler's practice is deeply introspective, drawing from personal experience while addressing universal themes of human connection and isolation.</p><p>Adler holds an MFA from Emily Carr University and has exhibited extensively throughout Canada and the United States. She maintains her studio practice in Vancouver.</p>",
+      "biography": "<p>Shelley Adler is a contemporary painter known for her vibrant, emotionally charged canvases that explore themes of identity, femininity, and psychological landscapes. Adler's work has evolved from figurative expressionism to increasingly abstract compositions.</p><p>Her paintings are distinguished by bold color palettes and gestural mark-making, creating dynamic surfaces that pulse with energy. Adler's practice is deeply introspective, drawing from personal experience while addressing universal themes of human connection and isolation.</p><p>Adler holds an MFA from Emily Carr University and has exhibited extensively throughout Canada and the United States. She maintains her studio practice in Vancouver.</p>",
       "artworks": [
         {
           "title": "Fluid Expressions I",
@@ -163,9 +209,8 @@
     {
       "id": "christine-reimer",
       "name": "Christine Reimer",
-      "birthYear": "1972",
       "thumbnailImage": "Christine Reimer/ChristineReimer1.jpg",
-      "biography": "<p>Christine Reimer is a conceptual artist whose interdisciplinary practice investigates the relationship between language, image, and meaning. Born in 1972, Reimer works across photography, text-based art, installation, and video.</p><p>Her work often employs systems of classification and archival methods to examine how we construct narratives and preserve memory. Through meticulous research and careful formal considerations, Reimer creates works that are both intellectually rigorous and visually compelling.</p><p>Reimer has exhibited nationally and internationally, with works in numerous public and private collections. She is a Professor of Art at a leading Canadian university and maintains an active studio practice in Calgary.</p>",
+      "biography": "<p>Christine Reimer is a conceptual artist whose interdisciplinary practice investigates the relationship between language, image, and meaning. Reimer works across photography, text-based art, installation, and video.</p><p>Her work often employs systems of classification and archival methods to examine how we construct narratives and preserve memory. Through meticulous research and careful formal considerations, Reimer creates works that are both intellectually rigorous and visually compelling.</p><p>Reimer has exhibited nationally and internationally, with works in numerous public and private collections. She is a Professor of Art at a leading Canadian university and maintains an active studio practice in Calgary.</p>",
       "artworks": [
         {
           "title": "Archival Studies I",
@@ -221,9 +266,8 @@
     {
       "id": "leonel-jules",
       "name": "Leonel Jules",
-      "birthYear": "1983",
       "thumbnailImage": "Leonel Jules/LeonelJules1.jpg",
-      "biography": "<p>Leonel Jules is a contemporary artist whose practice explores issues of diaspora, cultural hybridity, and postcolonial identity. Born in 1983 in Haiti, Jules immigrated to Canada as a young adult, and this experience of migration profoundly informs his artistic vision.</p><p>Working primarily in painting and collage, Jules creates layered compositions that incorporate imagery from Caribbean history, popular culture, and personal memory. His works are vibrant celebrations of Afro-Caribbean culture while also addressing complex questions of belonging and representation.</p><p>Jules has received critical acclaim for his exhibitions across North America and his work is included in several museum collections. He lives and works in Montreal.</p>",
+      "biography": "<p>Leonel Jules is a contemporary artist whose practice explores issues of diaspora, cultural hybridity, and postcolonial identity. Jules immigrated to Canada from Haiti as a young adult, and this experience of migration profoundly informs his artistic vision.</p><p>Working primarily in painting and collage, Jules creates layered compositions that incorporate imagery from Caribbean history, popular culture, and personal memory. His works are vibrant celebrations of Afro-Caribbean culture while also addressing complex questions of belonging and representation.</p><p>Jules has received critical acclaim for his exhibitions across North America and his work is included in several museum collections. He lives and works in Montreal.</p>",
       "artworks": [
         {
           "title": "Diaspora Dreams",
@@ -293,9 +337,8 @@
     {
       "id": "andy-dixon",
       "name": "Andy Dixon",
-      "birthYear": "1979",
       "thumbnailImage": "Andy Dixon/andydixon1.jpg",
-      "biography": "<p>Andy Dixon is a painter and sculptor known for his darkly humorous take on consumer culture, celebrity, and the art world itself. Born in 1979, Dixon's practice is characterized by technical virtuosity combined with a punk sensibility and irreverent wit.</p><p>His paintings often reference art historical traditions while subverting them through contemporary subject matter and bold compositional choices. Dixon's work has been described as both a critique and celebration of contemporary visual culture, navigating the space between high and low art with confidence and humor.</p><p>Dixon has exhibited internationally and his works are held in collections worldwide. He is based in Vancouver, where he maintains an active studio practice.</p>",
+      "biography": "<p>Andy Dixon is a painter and sculptor known for his darkly humorous take on consumer culture, celebrity, and the art world itself. Dixon's practice is characterized by technical virtuosity combined with a punk sensibility and irreverent wit.</p><p>His paintings often reference art historical traditions while subverting them through contemporary subject matter and bold compositional choices. Dixon's work has been described as both a critique and celebration of contemporary visual culture, navigating the space between high and low art with confidence and humor.</p><p>Dixon has exhibited internationally and his works are held in collections worldwide. He is based in Vancouver, where he maintains an active studio practice.</p>",
       "artworks": [
         {
           "title": "Consumer Culture I",
@@ -358,9 +401,8 @@
     {
       "id": "ben-walmsley",
       "name": "Ben Walmsley",
-      "birthYear": "1988",
       "thumbnailImage": "Ben Walmsley/BenWalmsley1.jpg",
-      "biography": "<p>Ben Walmsley is an emerging artist whose practice centers on landscape painting and environmental awareness. Born in 1988, Walmsley brings a contemporary perspective to the Canadian landscape tradition, addressing themes of climate change and human impact on natural environments.</p><p>His paintings are notable for their atmospheric quality and subtle color harmonies, evoking both the beauty and fragility of wilderness spaces. Walmsley's work invites viewers to consider their relationship with nature and the urgent need for environmental stewardship.</p><p>Walmsley has rapidly gained recognition in the Canadian art scene and has participated in numerous group and solo exhibitions. He works from his studio in British Columbia, drawing inspiration from the surrounding forests and coastlines.</p>",
+      "biography": "<p>Ben Walmsley is an emerging artist whose practice centers on landscape painting and environmental awareness. Walmsley brings a contemporary perspective to the Canadian landscape tradition, addressing themes of climate change and human impact on natural environments.</p><p>His paintings are notable for their atmospheric quality and subtle color harmonies, evoking both the beauty and fragility of wilderness spaces. Walmsley's work invites viewers to consider their relationship with nature and the urgent need for environmental stewardship.</p><p>Walmsley has rapidly gained recognition in the Canadian art scene and has participated in numerous group and solo exhibitions. He works from his studio in British Columbia, drawing inspiration from the surrounding forests and coastlines.</p>",
       "artworks": [
         {
           "title": "Coastal Wilderness",
