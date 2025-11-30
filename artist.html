@@ -80,7 +80,7 @@
                         <div class="artworks-grid">
                             <template x-for="(artwork, index) in artist.artworks" :key="index">
                                 <article class="artwork-card">
-                                    <div class="artwork-image">
+                                    <div class="artwork-image" @click="openLightbox(artwork.image, artwork.title)" style="cursor: pointer;">
                                         <img :src="artwork.image" :alt="artwork.title">
                                     </div>
                                     <div class="artwork-info">
@@ -115,6 +115,24 @@
         </div>
     </main>
 
+    <!-- Image Lightbox Modal -->
+    <div x-show="lightboxOpen" 
+         x-cloak
+         @click="closeLightbox()"
+         class="lightbox-overlay"
+         x-transition:enter="transition ease-out duration-300"
+         x-transition:enter-start="opacity-0"
+         x-transition:enter-end="opacity-100"
+         x-transition:leave="transition ease-in duration-200"
+         x-transition:leave-start="opacity-100"
+         x-transition:leave-end="opacity-0">
+        <button @click="closeLightbox()" class="lightbox-close" aria-label="Close lightbox">&times;</button>
+        <div class="lightbox-content" @click.stop>
+            <img :src="lightboxImage" :alt="lightboxTitle" class="lightbox-image">
+            <p class="lightbox-caption" x-text="lightboxTitle" x-show="lightboxTitle"></p>
+        </div>
+    </div>
+
     <script>
         function artistPage() {
             return {
@@ -124,9 +142,24 @@
                 artist: null,
                 allArtists: [],
                 otherArtists: [],
+                lightboxOpen: false,
+                lightboxImage: '',
+                lightboxTitle: '',
                 
                 async init() {
                     await this.loadArtist();
+                },
+                
+                openLightbox(image, title) {
+                    this.lightboxImage = image;
+                    this.lightboxTitle = title;
+                    this.lightboxOpen = true;
+                    document.body.style.overflow = 'hidden';
+                },
+                
+                closeLightbox() {
+                    this.lightboxOpen = false;
+                    document.body.style.overflow = '';
                 },
                 
                 async loadArtist() {

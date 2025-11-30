@@ -100,6 +100,9 @@ def update_artist_portfolio(artist_folder, artist_id):
     
     data['artists'][artist_index]['artworks'] = artworks
     
+    # Sort artworks chronologically (earliest to latest)
+    data['artists'][artist_index]['artworks'].sort(key=lambda x: int(x['year']) if x['year'].isdigit() else 9999)
+    
     # Save updated JSON
     with open('data/artists.json', 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
